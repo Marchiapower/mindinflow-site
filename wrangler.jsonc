@@ -1,0 +1,68 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mindinflow-site",
+  "compatibility_date": "2025-11-19",
+  "pages_build_output_dir": "./dist",
+  
+  // Flags de compatibilidade para melhor performance
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  
+  // Limites e otimizações
+  "limits": {
+    "cpu_ms": 50
+  },
+  
+  // Observabilidade
+  "observability": {
+    "enabled": true
+  },
+  
+  // Configurações futuras prontas (descomente quando necessário)
+  
+  // Analytics - rastreamento de visitantes
+  // "analytics_engine_datasets": [
+  //   {
+  //     "binding": "ANALYTICS"
+  //   }
+  // ],
+  
+  // KV Storage - cache de dados
+  // "kv_namespaces": [
+  //   {
+  //     "binding": "CACHE",
+  //     "id": "seu-kv-id-aqui",
+  //     "preview_id": "seu-kv-preview-id-aqui"
+  //   }
+  // ],
+  
+  // D1 Database - dados estruturados (leads, contatos)
+  // "d1_databases": [
+  //   {
+  //     "binding": "DB",
+  //     "database_name": "powerbrand-leads",
+  //     "database_id": "seu-database-id-aqui"
+  //   }
+  // ],
+  
+  // R2 Storage - armazenamento de arquivos
+  // "r2_buckets": [
+  //   {
+  //     "binding": "STORAGE",
+  //     "bucket_name": "powerbrand-assets"
+  //   }
+  // ],
+  
+  // Cloudflare AI - inteligência artificial
+  // "ai": {
+  //   "binding": "AI"
+  // },
+  
+  // Variáveis de ambiente (não colocar senhas aqui!)
+  "vars": {
+    "ENVIRONMENT": "production",
+    "SITE_NAME": "Mind In Flow",
+    "WHATSAPP_NUMBER": "5511918534654"
+  }
+}

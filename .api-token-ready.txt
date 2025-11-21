@@ -1,0 +1,8 @@
+AGUARDANDO NOVO TOKEN DO USUÁRIO
+
+Quando o usuário colar o token, executar:
+1. setup_cloudflare_api_key
+2. npx wrangler whoami
+3. npx wrangler pages project list
+
+Se tudo funcionar, prosseguir para criação do projeto.

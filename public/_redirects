@@ -1,0 +1,14 @@
+# Redirects e Rewrites para Cloudflare Pages
+
+# Forçar HTTPS
+http://:splat https://:splat 301!
+
+# Redirect de www para apex (se necessário)
+# https://www.powerbrand.com/* https://powerbrand.com/:splat 301
+
+# SPA fallback - todas as rotas vão para o Worker
+/* /index.html 200
+
+# URLs amigáveis (descomente se precisar)
+# /contato https://wa.me/5511918534654 302
+# /whatsapp https://wa.me/5511918534654 302

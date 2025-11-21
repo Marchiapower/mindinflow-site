@@ -1,0 +1,22 @@
+# robots.txt para PowerBrand
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://powerbrand.pages.dev/sitemap.xml
+
+# Bloquear arquivos sensíveis
+Disallow: /api/
+Disallow: /_worker.js
+Disallow: /_routes.json
+
+# Otimização para crawlers
+Crawl-delay: 1
+
+# Crawlers específicos
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
