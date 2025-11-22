@@ -510,8 +510,8 @@ app.get('/', (c) => {
                         <div class="flex items-center justify-center gap-4 mb-8">
                             <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/favicon.png" 
                                  alt="Mind In Flow" 
-                                 class="h-40 lg:h-64 w-auto"
-                                 style="filter: drop-shadow(0 0 2px rgba(255, 255, 255, 1)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.5));">
+                                 class="h-80 lg:h-128 w-auto"
+                                 style="filter: drop-shadow(0 0 2px rgba(255, 255, 255, 1)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.5)); max-height: 512px;">
                         </div>
                         <span class="text-white">A Inteligência Humana por Trás da Sua</span><br>
                         <span class="gradient-text">Máquina de Conversão Digital</span>
