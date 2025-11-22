@@ -1132,6 +1132,12 @@ app.get('/', (c) => {
             // PARTÍCULAS NETWORK/CONEXÕES - HERO SECTION
             // ============================================
             const canvas = document.getElementById('particlesCanvas');
+            console.log('Particles init:', {
+                canvasFound: !!canvas,
+                windowWidth: window.innerWidth,
+                windowHeight: window.innerHeight
+            });
+            
             if (canvas) {
                 const ctx = canvas.getContext('2d');
                 let particles = [];
@@ -1229,6 +1235,13 @@ app.get('/', (c) => {
                         const rect = canvas.getBoundingClientRect();
                         canvas.width = rect.width;
                         canvas.height = rect.height;
+                        
+                        // Debug log
+                        console.log('Canvas resized:', {
+                            width: canvas.width,
+                            height: canvas.height,
+                            isMobile: window.innerWidth < 768
+                        });
                         
                         // Ajustar quantidade de partículas baseado em tamanho da tela
                         const isMobile = window.innerWidth < 768;
