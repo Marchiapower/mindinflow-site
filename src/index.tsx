@@ -634,6 +634,154 @@ app.get('/', (c) => {
             </div>
         </section>
 
+        <!-- 3.5 PROPOSTA DE VALOR ÚNICA - TUDO EM UM SÓ LUGAR -->
+        <section class="relative py-32 fade-in overflow-hidden">
+            <!-- Background gradiente animado -->
+            <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900"></div>
+            
+            <!-- Efeito de brilho sutil -->
+            <div class="absolute inset-0 opacity-20">
+                <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500 rounded-full blur-3xl animate-pulse"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-yellow-500 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+            </div>
+
+            <div class="section-container relative z-10">
+                <!-- Headline de impacto -->
+                <div class="text-center mb-20">
+                    <div class="inline-block mb-6">
+                        <span class="px-6 py-3 bg-gradient-to-r from-orange-500 to-yellow-500 text-black font-black text-sm uppercase tracking-wider rounded-full">
+                            Chega de Perder Tempo
+                        </span>
+                    </div>
+                    
+                    <h2 class="text-5xl lg:text-7xl font-black leading-tight mb-8">
+                        <span class="text-white">Pare de Procurar em</span><br>
+                        <span class="gradient-text">Vários Lugares</span><br>
+                        <span class="text-white">Tudo Está Aqui</span>
+                    </h2>
+                    
+                    <p class="text-2xl lg:text-3xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-light">
+                        Logo. Identidade Visual. Posicionamento de Marketing.<br>
+                        <strong class="text-white font-bold">Não importa onde você está hoje.</strong>
+                    </p>
+                </div>
+
+                <!-- Grid de benefícios com cards especiais -->
+                <div class="grid md:grid-cols-3 gap-8 mb-20">
+                    <!-- Card 1: Avaliamos -->
+                    <div class="group relative bg-gradient-to-b from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-3xl p-10 border border-gray-700 hover:border-orange-500 transition-all duration-500 hover:transform hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-br from-orange-500/0 to-yellow-500/0 group-hover:from-orange-500/10 group-hover:to-yellow-500/10 rounded-3xl transition-all duration-500"></div>
+                        
+                        <div class="relative z-10">
+                            <div class="w-20 h-20 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-search-plus text-3xl text-black"></i>
+                            </div>
+                            
+                            <h3 class="text-2xl font-black text-white mb-4">
+                                Avaliamos Tudo
+                            </h3>
+                            
+                            <p class="text-gray-300 text-lg leading-relaxed">
+                                Já tem identidade visual? Ótimo! Analisamos o que funciona e o que precisa evoluir. 
+                                <strong class="text-orange-500">Sem jogar fora seu investimento anterior.</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Criamos -->
+                    <div class="group relative bg-gradient-to-b from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-3xl p-10 border border-gray-700 hover:border-orange-500 transition-all duration-500 hover:transform hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-br from-orange-500/0 to-yellow-500/0 group-hover:from-orange-500/10 group-hover:to-yellow-500/10 rounded-3xl transition-all duration-500"></div>
+                        
+                        <div class="relative z-10">
+                            <div class="w-20 h-20 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-magic text-3xl text-black"></i>
+                            </div>
+                            
+                            <h3 class="text-2xl font-black text-white mb-4">
+                                Ou Criamos do Zero
+                            </h3>
+                            
+                            <p class="text-gray-300 text-lg leading-relaxed">
+                                Começando agora? Perfeito! Construímos sua identidade visual completa com propósito estratégico. 
+                                <strong class="text-orange-500">Do conceito à conversão.</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Levamos pela mão -->
+                    <div class="group relative bg-gradient-to-b from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-3xl p-10 border border-gray-700 hover:border-orange-500 transition-all duration-500 hover:transform hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-br from-orange-500/0 to-yellow-500/0 group-hover:from-orange-500/10 group-hover:to-yellow-500/10 rounded-3xl transition-all duration-500"></div>
+                        
+                        <div class="relative z-10">
+                            <div class="w-20 h-20 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-hands-helping text-3xl text-black"></i>
+                            </div>
+                            
+                            <h3 class="text-2xl font-black text-white mb-4">
+                                Passo a Passo
+                            </h3>
+                            
+                            <p class="text-gray-300 text-lg leading-relaxed">
+                                Você nunca estará sozinho. Guiamos cada etapa com clareza e estratégia. 
+                                <strong class="text-orange-500">Do jeito certo, sem atalhos furados.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Propósito central - O Porquê -->
+                <div class="relative max-w-5xl mx-auto">
+                    <div class="bg-gradient-to-br from-orange-500/20 to-yellow-500/20 backdrop-blur-xl rounded-3xl p-12 lg:p-16 border-2 border-orange-500/50 shadow-2xl">
+                        <!-- Badge superior -->
+                        <div class="flex justify-center mb-8">
+                            <div class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full">
+                                <i class="fas fa-bullseye text-2xl text-black"></i>
+                                <span class="text-black font-black text-xl uppercase tracking-wide">Nosso Propósito</span>
+                            </div>
+                        </div>
+
+                        <h3 class="text-4xl lg:text-5xl font-black text-center mb-8 leading-tight">
+                            <span class="text-white">Transformar Você em uma</span><br>
+                            <span class="gradient-text text-6xl">Autoridade Magnética</span>
+                        </h3>
+                        
+                        <p class="text-2xl lg:text-3xl text-white text-center leading-relaxed font-medium mb-8">
+                            Que atrai <strong class="text-orange-400">o cliente certo</strong>.<br>
+                            Aquele que <strong class="text-orange-400">valoriza seu trabalho</strong>.<br>
+                            E que <strong class="text-orange-400">compra sem objeção</strong>.
+                        </p>
+
+                        <!-- Linha divisória decorativa -->
+                        <div class="flex items-center justify-center gap-4 my-10">
+                            <div class="h-1 w-20 bg-gradient-to-r from-transparent via-orange-500 to-transparent"></div>
+                            <i class="fas fa-crown text-3xl text-orange-500"></i>
+                            <div class="h-1 w-20 bg-gradient-to-r from-transparent via-orange-500 to-transparent"></div>
+                        </div>
+
+                        <!-- Mensagem emocional final -->
+                        <p class="text-xl text-gray-200 text-center leading-relaxed max-w-3xl mx-auto">
+                            Não importa se você está feliz ou frustrado com sua identidade atual. 
+                            <strong class="text-white">Nós pegamos você onde está</strong> e conduzimos até onde você precisa estar: 
+                            <span class="text-orange-400 font-bold">no topo da mente do seu cliente ideal</span>.
+                        </p>
+
+                        <!-- CTA secundário -->
+                        <div class="flex justify-center mt-10">
+                            <a href="https://wa.me/5511918534654?text=Quero%20construir%20minha%20autoridade%20digital%20com%20Mind%20In%20Flow" 
+                               class="group inline-flex items-center gap-3 px-10 py-5 bg-white text-black font-black text-lg rounded-full hover:bg-orange-500 hover:scale-105 transition-all duration-300 shadow-xl">
+                                <span>Quero Ser Uma Autoridade</span>
+                                <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Efeitos decorativos ao redor do card central -->
+                    <div class="absolute -top-10 -left-10 w-32 h-32 bg-orange-500/20 rounded-full blur-3xl"></div>
+                    <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-yellow-500/20 rounded-full blur-3xl"></div>
+                </div>
+            </div>
+        </section>
+
         <!-- 4. PROCESSO POWERBRAND (MATAR OBJEÇÃO TEMPO) -->
         <section class="section-container py-20 fade-in">
             <div class="text-center mb-16">
