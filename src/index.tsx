@@ -501,7 +501,8 @@ app.get('/', (c) => {
                                  style="height: 320px; max-height: 512px; filter: drop-shadow(0 0 2px rgba(255, 255, 255, 1)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.5));"
                                  onload="this.style.display='block'">
                         </div>
-                        <span class="text-white">A Inteligência Humana por Trás da Sua</span><br>
+                        <span class="text-white">A Inteligência Humana Conectando Possibilidades</span><br>
+                        <span class="text-white">por Trás da Sua</span><br>
                         <span class="gradient-text">Máquina de Conversão Digital</span>
                     </h1>
                     
