@@ -1169,11 +1169,14 @@ app.get('/', (c) => {
 
                 // Detectar preferência de movimento reduzido (acessibilidade)
                 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                console.log('Prefers reduced motion:', prefersReducedMotion);
                 
+                // REMOVIDO O BLOQUEIO - sempre mostrar partículas
+                // Reduzir velocidade se usuário preferir menos movimento
                 if (prefersReducedMotion) {
-                    // Se usuário prefere movimento reduzido, não inicializar
-                    canvas.style.display = 'none';
-                } else {
+                    config.speed = 1; // Velocidade reduzida
+                    console.log('Speed reduced for accessibility');
+                }
                     // Classe de Partícula
                     class Particle {
                         constructor() {
@@ -1308,7 +1311,6 @@ app.get('/', (c) => {
                             cancelAnimationFrame(animationId);
                         }
                     });
-                }
             }
             
             // Inicializar com múltiplas tentativas
