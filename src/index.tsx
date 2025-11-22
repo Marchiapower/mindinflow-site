@@ -233,12 +233,14 @@ app.get('/', (c) => {
             }
             
             .hero-overlay {
-                background: linear-gradient(135deg, rgba(10, 10, 10, 0.97), rgba(26, 26, 26, 0.92));
+                background: linear-gradient(135deg, rgba(10, 10, 10, 0.85), rgba(26, 26, 26, 0.80));
                 position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
+                z-index: 2;
+                pointer-events: none;
             }
             
             .hero-content {
@@ -488,7 +490,7 @@ app.get('/', (c) => {
             <!-- Canvas de Partículas Network/Conexões -->
             <canvas id="particlesCanvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></canvas>
             
-            <div class="hero-content section-container flex flex-col items-center justify-center text-center py-32 fade-in" style="position: relative; z-index: 2;">
+            <div class="hero-content section-container flex flex-col items-center justify-center text-center py-32 fade-in" style="position: relative; z-index: 3;">
                 <!-- Conteúdo Centralizado -->
                 <div class="max-w-5xl space-y-10">
                     
