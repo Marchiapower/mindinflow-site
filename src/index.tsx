@@ -488,7 +488,7 @@ app.get('/', (c) => {
             <div class="hero-overlay"></div>
             
             <!-- Canvas de Partículas Network/Conexões -->
-            <canvas id="particlesCanvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></canvas>
+            <canvas id="particlesCanvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;"></canvas>
             
             <div class="hero-content section-container flex flex-col items-center justify-center text-center py-32 fade-in" style="position: relative; z-index: 3;">
                 <!-- Conteúdo Centralizado -->
@@ -1232,16 +1232,21 @@ app.get('/', (c) => {
 
                     // Resize canvas
                     function resizeCanvas() {
-                        const rect = canvas.getBoundingClientRect();
-                        canvas.width = rect.width;
-                        canvas.height = rect.height;
-                        
-                        // Debug log
-                        console.log('Canvas resized:', {
-                            width: canvas.width,
-                            height: canvas.height,
-                            isMobile: window.innerWidth < 768
-                        });
+                        // Pegar dimensões da hero-section (elemento pai)
+                        const heroSection = canvas.closest('.hero-section');
+                        if (heroSection) {
+                            const rect = heroSection.getBoundingClientRect();
+                            canvas.width = rect.width;
+                            canvas.height = rect.height;
+                            
+                            // Debug log
+                            console.log('Canvas resized:', {
+                                width: canvas.width,
+                                height: canvas.height,
+                                isMobile: window.innerWidth < 768,
+                                heroHeight: rect.height
+                            });
+                        }
                         
                         // Ajustar quantidade de partículas baseado em tamanho da tela
                         const isMobile = window.innerWidth < 768;
