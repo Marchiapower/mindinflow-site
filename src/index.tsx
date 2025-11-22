@@ -493,8 +493,9 @@ app.get('/', (c) => {
                         <div class="flex items-center justify-center gap-4 mb-8">
                             <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/favicon.png" 
                                  alt="Mind In Flow" 
-                                 class="h-80 lg:h-128 w-auto"
-                                 style="filter: drop-shadow(0 0 2px rgba(255, 255, 255, 1)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.5)); max-height: 512px;">
+                                 class="w-auto"
+                                 style="height: 320px; max-height: 512px; filter: drop-shadow(0 0 2px rgba(255, 255, 255, 1)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.5));"
+                                 onload="this.style.display='block'">
                         </div>
                         <span class="text-white">A Inteligência Humana por Trás da Sua</span><br>
                         <span class="gradient-text">Máquina de Conversão Digital</span>
@@ -919,7 +920,7 @@ app.get('/', (c) => {
         <!-- Footer -->
         <footer class="bg-black py-12 mt-20 border-t border-orange-500/20">
             <div class="section-container text-center">
-                <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/mindinflow-logo.png" alt="Mind In Flow Logo" class="w-40 mx-auto mb-6 opacity-80 rounded-full bg-white/10 p-3">
+                <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/mindinflow-logo.png" alt="Mind In Flow Logo" class="mx-auto mb-6 rounded-full bg-white/10 p-3" style="width: 160px; opacity: 0.8; display: block;" onload="console.log('Footer logo loaded')">
                 <p class="text-gray-400 mb-2 text-lg font-medium">
                     &copy; 2024 Mind In Flow - Inteligência Comercial
                 </p>
