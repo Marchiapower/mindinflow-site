@@ -496,14 +496,11 @@ app.get('/', (c) => {
                     
                     <h1 class="text-6xl lg:text-8xl font-black leading-tight">
                         <!-- Logo integrada ao título - Transparente com brilho branco e contorno -->
-                        <div class="flex flex-col items-center justify-center gap-2 mb-8">
-                            <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/favicon.png" 
-                                 alt="Mind In Flow" 
-                                 class="w-auto"
-                                 style="height: 320px; max-height: 512px; filter: drop-shadow(0 0 2px rgba(255, 255, 255, 1)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.5));"
-                                 onload="this.style.display='block'">
-                            <span class="text-3xl lg:text-4xl font-bold tracking-wide" style="color: #FF7A3D;">Inteligência Comercial</span>
-                        </div>
+                        <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/favicon.png" 
+                             alt="Mind In Flow" 
+                             class="mx-auto mb-8 w-auto"
+                             style="height: 320px; max-height: 512px; filter: drop-shadow(0 0 2px rgba(255, 255, 255, 1)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.5));"
+                             onload="this.style.display='block'">
                         <span class="text-white">A Inteligência Humana Conectando Possibilidades</span><br>
                         <span class="text-white">por Trás da Sua</span><br>
                         <span class="gradient-text">Máquina de Conversão Digital</span>
