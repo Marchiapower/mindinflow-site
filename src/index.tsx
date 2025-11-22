@@ -736,9 +736,9 @@ app.get('/', (c) => {
                             </div>
                         </div>
 
-                        <h3 class="text-4xl lg:text-5xl font-black text-center mb-8 leading-tight">
+                        <h3 class="text-3xl md:text-4xl lg:text-5xl font-black text-center mb-8 leading-tight">
                             <span class="text-white">Transformar Você em uma</span><br>
-                            <span class="gradient-text text-6xl">Autoridade Magnética</span>
+                            <span class="gradient-text text-4xl md:text-5xl lg:text-6xl">Autoridade Magnética</span>
                         </h3>
                         
                         <p class="text-2xl lg:text-3xl text-white text-center leading-relaxed font-medium mb-8">
@@ -1142,7 +1142,10 @@ app.get('/', (c) => {
                     opacity: 1,              // Opacidade máxima
                     maxDistance: 150,        // Distância para conectar
                     particleSize: 2.5,       // Tamanho das partículas
-                    lineWidth: 1.5           // Espessura das linhas
+                    lineWidth: 1.5,          // Espessura das linhas
+                    // Mobile configs
+                    mobileOpacity: 1.2,      // Opacidade aumentada no mobile
+                    mobileParticleSize: 3    // Partículas maiores no mobile
                 };
 
                 // Detectar preferência de movimento reduzido (acessibilidade)
@@ -1179,16 +1182,24 @@ app.get('/', (c) => {
                         }
 
                         draw() {
+                            const isMobile = window.innerWidth < 768;
+                            const baseOpacity = isMobile ? config.mobileOpacity : config.opacity;
+                            const particleSize = isMobile ? config.mobileParticleSize : this.size;
+                            
                             ctx.fillStyle = '#FF7A3D';
-                            ctx.globalAlpha = this.opacity * config.opacity;
+                            ctx.globalAlpha = this.opacity * baseOpacity;
                             ctx.beginPath();
-                            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                            ctx.arc(this.x, this.y, particleSize, 0, Math.PI * 2);
                             ctx.fill();
                         }
                     }
 
                     // Conectar partículas próximas
                     function connectParticles() {
+                        const isMobile = window.innerWidth < 768;
+                        const baseOpacity = isMobile ? config.mobileOpacity : config.opacity;
+                        const lineWidth = isMobile ? config.lineWidth * 1.5 : config.lineWidth;
+                        
                         for (let i = 0; i < particles.length; i++) {
                             for (let j = i + 1; j < particles.length; j++) {
                                 const dx = particles[i].x - particles[j].x;
@@ -1196,10 +1207,12 @@ app.get('/', (c) => {
                                 const distance = Math.sqrt(dx * dx + dy * dy);
 
                                 if (distance < config.maxDistance) {
-                                    const opacity = (1 - distance / config.maxDistance) * 0.5;
+                                    // Aumentar opacidade das linhas no mobile
+                                    const lineOpacity = isMobile ? 0.7 : 0.5;
+                                    const opacity = (1 - distance / config.maxDistance) * lineOpacity;
                                     ctx.strokeStyle = '#FF7A3D';
-                                    ctx.globalAlpha = opacity * config.opacity;
-                                    ctx.lineWidth = config.lineWidth;
+                                    ctx.globalAlpha = opacity * baseOpacity;
+                                    ctx.lineWidth = lineWidth;
                                     ctx.beginPath();
                                     ctx.moveTo(particles[i].x, particles[i].y);
                                     ctx.lineTo(particles[j].x, particles[j].y);
@@ -1217,7 +1230,8 @@ app.get('/', (c) => {
                         
                         // Ajustar quantidade de partículas baseado em tamanho da tela
                         const isMobile = window.innerWidth < 768;
-                        const particleCount = isMobile ? Math.floor(config.count * 0.5) : config.count;
+                        // Mobile usa 70% das partículas ao invés de 50%
+                        const particleCount = isMobile ? Math.floor(config.count * 0.7) : config.count;
                         
                         // Reinicializar partículas com novo tamanho
                         particles = [];
