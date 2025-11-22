@@ -1163,8 +1163,8 @@ app.get('/', (c) => {
                     particleSize: 2.5,       // Tamanho das partículas
                     lineWidth: 1.5,          // Espessura das linhas
                     // Mobile configs
-                    mobileOpacity: 1.2,      // Opacidade aumentada no mobile
-                    mobileParticleSize: 3    // Partículas maiores no mobile
+                    mobileOpacity: 1,        // Opacidade normal no mobile
+                    mobileParticleSize: 5    // Partículas MUITO maiores no mobile (5px)
                 };
 
                 // Detectar preferência de movimento reduzido (acessibilidade)
@@ -1208,11 +1208,14 @@ app.get('/', (c) => {
                             const baseOpacity = isMobile ? config.mobileOpacity : config.opacity;
                             const particleSize = isMobile ? config.mobileParticleSize : this.size;
                             
+                            // Resetar globalAlpha antes de definir (fix)
+                            ctx.globalAlpha = 1;
                             ctx.fillStyle = '#FF7A3D';
                             ctx.globalAlpha = this.opacity * baseOpacity;
                             ctx.beginPath();
                             ctx.arc(this.x, this.y, particleSize, 0, Math.PI * 2);
                             ctx.fill();
+                            ctx.closePath();
                         }
                     }
 
@@ -1244,22 +1247,28 @@ app.get('/', (c) => {
                         }
                     }
 
-                    // Resize canvas - SIMPLIFICADO
+                    // Resize canvas - Usar altura do hero-section
                     function resizeCanvas() {
-                        // Usar dimensões da janela diretamente
-                        const width = window.innerWidth;
-                        const height = window.innerHeight;
+                        const heroSection = document.querySelector('.hero-section');
                         
-                        canvas.width = width;
-                        canvas.height = height;
-                        
-                        // Debug log
-                        console.log('Canvas resized:', {
-                            width: canvas.width,
-                            height: canvas.height,
-                            isMobile: window.innerWidth < 768,
-                            devicePixelRatio: window.devicePixelRatio || 1
-                        });
+                        if (heroSection) {
+                            const rect = heroSection.getBoundingClientRect();
+                            canvas.width = rect.width;
+                            canvas.height = rect.height;
+                            
+                            console.log('Canvas resized:', {
+                                width: canvas.width,
+                                height: canvas.height,
+                                heroHeight: rect.height,
+                                isMobile: window.innerWidth < 768,
+                                devicePixelRatio: window.devicePixelRatio || 1
+                            });
+                        } else {
+                            // Fallback
+                            canvas.width = window.innerWidth;
+                            canvas.height = window.innerHeight;
+                            console.warn('Hero section not found, using window dimensions');
+                        }
                         
                         // Ajustar quantidade de partículas baseado em tamanho da tela
                         const isMobile = window.innerWidth < 768;
