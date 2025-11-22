@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Partículas - Mind In Flow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #FF7A3D, #FFB347);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .demo-card {
+            background: #1a1a1a;
+            border: 2px solid #333;
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .demo-card:hover {
+            transform: translateY(-5px);
+            border-color: #FF7A3D;
+        }
+
+        .demo-header {
+            background: #222;
+            padding: 1.5rem;
+            border-bottom: 2px solid #333;
+        }
+
+        .demo-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .demo-description {
+            color: #999;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .demo-canvas-wrapper {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            overflow: hidden;
+        }
+
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .demo-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        .demo-logo {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px rgba(255, 122, 61, 0.5);
+        }
+
+        .demo-tagline {
+            font-size: 1.2rem;
+            color: #ddd;
+            font-weight: 300;
+        }
+
+        .controls {
+            background: #1a1a1a;
+            border: 2px solid #333;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .control-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .control-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #FF7A3D;
+            font-weight: 600;
+        }
+
+        .control-row {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        input[type="range"] {
+            flex: 1;
+            height: 6px;
+            background: #333;
+            outline: none;
+            border-radius: 3px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            background: #FF7A3D;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            background: #FF7A3D;
+            cursor: pointer;
+            border-radius: 50%;
+            border: none;
+        }
+
+        .value-display {
+            min-width: 50px;
+            text-align: right;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .note {
+            background: #0a0a0a;
+            border-left: 4px solid #FF7A3D;
+            padding: 1rem;
+            margin-top: 2rem;
+            border-radius: 0.5rem;
+        }
+
+        .note h3 {
+            color: #FF7A3D;
+            margin-bottom: 0.5rem;
+        }
+
+        .note p {
+            color: #999;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+
+            .demo-canvas-wrapper {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Teste de Partículas Animadas - Mind In Flow</h1>
+        <p class="subtitle">Compare os 3 estilos de animação para escolher o que melhor representa o conceito "Flow"</p>
+
+        <div class="controls">
+            <h3 style="color: #FF7A3D; margin-bottom: 1rem;">⚙️ Controles Globais</h3>
+            
+            <div class="control-group">
+                <label>Velocidade das Partículas</label>
+                <div class="control-row">
+                    <input type="range" id="speedControl" min="0.1" max="3" step="0.1" value="1">
+                    <span class="value-display" id="speedValue">1.0x</span>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label>Quantidade de Partículas</label>
+                <div class="control-row">
+                    <input type="range" id="countControl" min="20" max="150" step="10" value="60">
+                    <span class="value-display" id="countValue">60</span>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label>Opacidade</label>
+                <div class="control-row">
+                    <input type="range" id="opacityControl" min="0.1" max="1" step="0.1" value="0.6">
+                    <span class="value-display" id="opacityValue">0.6</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <!-- Opção A: Flow Orgânico -->
+            <div class="demo-card">
+                <div class="demo-header">
+                    <div class="demo-title">🌊 Opção A: Flow Orgânico</div>
+                    <div class="demo-description">
+                        Movimento fluido e natural, como correntes de ar. Partículas flutuam suavemente com velocidades variadas. 
+                        <strong>Representa o "fluxo mental"</strong> de forma poética e orgânica.
+                    </div>
+                </div>
+                <div class="demo-canvas-wrapper">
+                    <canvas id="canvasA"></canvas>
+                    <div class="demo-content">
+                        <div class="demo-logo">Mind In Flow</div>
+                        <div class="demo-tagline">Inteligência Comercial</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opção B: Network/Conexões -->
+            <div class="demo-card">
+                <div class="demo-header">
+                    <div class="demo-title">🔗 Opção B: Network/Conexões</div>
+                    <div class="demo-description">
+                        Partículas conectadas por linhas quando próximas. Simula rede neural e conexões sinápticas. 
+                        <strong>Tech e corporativo</strong>, representa inteligência e processamento.
+                    </div>
+                </div>
+                <div class="demo-canvas-wrapper">
+                    <canvas id="canvasB"></canvas>
+                    <div class="demo-content">
+                        <div class="demo-logo">Mind In Flow</div>
+                        <div class="demo-tagline">Inteligência Comercial</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opção C: Minimal -->
+            <div class="demo-card">
+                <div class="demo-header">
+                    <div class="demo-title">✨ Opção C: Minimal</div>
+                    <div class="demo-description">
+                        Poucas partículas com movimento muito sutil. Elegante e discreto, não compete com a mensagem. 
+                        <strong>Performance máxima</strong>, ideal para manter foco na conversão.
+                    </div>
+                </div>
+                <div class="demo-canvas-wrapper">
+                    <canvas id="canvasC"></canvas>
+                    <div class="demo-content">
+                        <div class="demo-logo">Mind In Flow</div>
+                        <div class="demo-tagline">Inteligência Comercial</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="note">
+            <h3>📝 Observações Importantes</h3>
+            <p>
+                • <strong>Performance</strong>: Todos os 3 estilos usam Canvas HTML5 otimizado com requestAnimationFrame<br>
+                • <strong>Responsivo</strong>: Partículas se ajustam automaticamente ao tamanho da tela<br>
+                • <strong>Acessibilidade</strong>: Implementação final respeitará prefers-reduced-motion<br>
+                • <strong>Mobile</strong>: Versão final reduzirá partículas em dispositivos móveis automaticamente<br>
+                • <strong>Sugestão</strong>: Observe qual estilo complementa melhor a mensagem sem distrair
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Configurações globais
+        let globalSpeed = 1;
+        let globalCount = 60;
+        let globalOpacity = 0.6;
+
+        // Controles
+        document.getElementById('speedControl').addEventListener('input', (e) => {
+            globalSpeed = parseFloat(e.target.value);
+            document.getElementById('speedValue').textContent = globalSpeed.toFixed(1) + 'x';
+        });
+
+        document.getElementById('countControl').addEventListener('input', (e) => {
+            globalCount = parseInt(e.target.value);
+            document.getElementById('countValue').textContent = globalCount;
+            // Reinicializar partículas com nova contagem
+            initParticlesA();
+            initParticlesB();
+            initParticlesC();
+        });
+
+        document.getElementById('opacityControl').addEventListener('input', (e) => {
+            globalOpacity = parseFloat(e.target.value);
+            document.getElementById('opacityValue').textContent = globalOpacity.toFixed(1);
+        });
+
+        // ============================================
+        // OPÇÃO A: FLOW ORGÂNICO
+        // ============================================
+        const canvasA = document.getElementById('canvasA');
+        const ctxA = canvasA.getContext('2d');
+        let particlesA = [];
+
+        function resizeCanvasA() {
+            canvasA.width = canvasA.offsetWidth;
+            canvasA.height = canvasA.offsetHeight;
+        }
+
+        class ParticleA {
+            constructor() {
+                this.x = Math.random() * canvasA.width;
+                this.y = Math.random() * canvasA.height;
+                this.size = Math.random() * 3 + 1;
+                this.speedX = (Math.random() - 0.5) * 0.5;
+                this.speedY = (Math.random() - 0.5) * 0.5;
+                this.opacity = Math.random() * 0.5 + 0.3;
+                this.color = Math.random() > 0.5 ? '#FF7A3D' : '#FFB347';
+            }
+
+            update() {
+                this.x += this.speedX * globalSpeed;
+                this.y += this.speedY * globalSpeed;
+
+                // Wrap around edges
+                if (this.x > canvasA.width) this.x = 0;
+                if (this.x < 0) this.x = canvasA.width;
+                if (this.y > canvasA.height) this.y = 0;
+                if (this.y < 0) this.y = canvasA.height;
+            }
+
+            draw() {
+                ctxA.fillStyle = this.color;
+                ctxA.globalAlpha = this.opacity * globalOpacity;
+                ctxA.beginPath();
+                ctxA.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctxA.fill();
+            }
+        }
+
+        function initParticlesA() {
+            particlesA = [];
+            for (let i = 0; i < globalCount; i++) {
+                particlesA.push(new ParticleA());
+            }
+        }
+
+        function animateA() {
+            ctxA.clearRect(0, 0, canvasA.width, canvasA.height);
+            particlesA.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            requestAnimationFrame(animateA);
+        }
+
+        // ============================================
+        // OPÇÃO B: NETWORK/CONEXÕES
+        // ============================================
+        const canvasB = document.getElementById('canvasB');
+        const ctxB = canvasB.getContext('2d');
+        let particlesB = [];
+
+        function resizeCanvasB() {
+            canvasB.width = canvasB.offsetWidth;
+            canvasB.height = canvasB.offsetHeight;
+        }
+
+        class ParticleB {
+            constructor() {
+                this.x = Math.random() * canvasB.width;
+                this.y = Math.random() * canvasB.height;
+                this.size = Math.random() * 2 + 1;
+                this.speedX = (Math.random() - 0.5) * 0.3;
+                this.speedY = (Math.random() - 0.5) * 0.3;
+            }
+
+            update() {
+                this.x += this.speedX * globalSpeed;
+                this.y += this.speedY * globalSpeed;
+
+                if (this.x > canvasB.width) this.x = 0;
+                if (this.x < 0) this.x = canvasB.width;
+                if (this.y > canvasB.height) this.y = 0;
+                if (this.y < 0) this.y = canvasB.height;
+            }
+
+            draw() {
+                ctxB.fillStyle = '#FF7A3D';
+                ctxB.globalAlpha = 0.8 * globalOpacity;
+                ctxB.beginPath();
+                ctxB.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctxB.fill();
+            }
+        }
+
+        function initParticlesB() {
+            particlesB = [];
+            for (let i = 0; i < globalCount; i++) {
+                particlesB.push(new ParticleB());
+            }
+        }
+
+        function connectParticles() {
+            const maxDistance = 120;
+            for (let i = 0; i < particlesB.length; i++) {
+                for (let j = i + 1; j < particlesB.length; j++) {
+                    const dx = particlesB[i].x - particlesB[j].x;
+                    const dy = particlesB[i].y - particlesB[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < maxDistance) {
+                        ctxB.strokeStyle = '#FF7A3D';
+                        ctxB.globalAlpha = (1 - distance / maxDistance) * 0.3 * globalOpacity;
+                        ctxB.lineWidth = 1;
+                        ctxB.beginPath();
+                        ctxB.moveTo(particlesB[i].x, particlesB[i].y);
+                        ctxB.lineTo(particlesB[j].x, particlesB[j].y);
+                        ctxB.stroke();
+                    }
+                }
+            }
+        }
+
+        function animateB() {
+            ctxB.clearRect(0, 0, canvasB.width, canvasB.height);
+            particlesB.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            connectParticles();
+            requestAnimationFrame(animateB);
+        }
+
+        // ============================================
+        // OPÇÃO C: MINIMAL
+        // ============================================
+        const canvasC = document.getElementById('canvasC');
+        const ctxC = canvasC.getContext('2d');
+        let particlesC = [];
+
+        function resizeCanvasC() {
+            canvasC.width = canvasC.offsetWidth;
+            canvasC.height = canvasC.offsetHeight;
+        }
+
+        class ParticleC {
+            constructor() {
+                this.x = Math.random() * canvasC.width;
+                this.y = Math.random() * canvasC.height;
+                this.size = Math.random() * 2 + 1;
+                this.speedX = (Math.random() - 0.5) * 0.2;
+                this.speedY = (Math.random() - 0.5) * 0.2;
+                this.opacity = Math.random() * 0.3 + 0.2;
+            }
+
+            update() {
+                this.x += this.speedX * globalSpeed;
+                this.y += this.speedY * globalSpeed;
+
+                if (this.x > canvasC.width) this.x = 0;
+                if (this.x < 0) this.x = canvasC.width;
+                if (this.y > canvasC.height) this.y = 0;
+                if (this.y < 0) this.y = canvasC.height;
+            }
+
+            draw() {
+                ctxC.fillStyle = '#ffffff';
+                ctxC.globalAlpha = this.opacity * globalOpacity;
+                ctxC.beginPath();
+                ctxC.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctxC.fill();
+            }
+        }
+
+        function initParticlesC() {
+            particlesC = [];
+            const minimalCount = Math.floor(globalCount * 0.4); // 40% da quantidade global
+            for (let i = 0; i < minimalCount; i++) {
+                particlesC.push(new ParticleC());
+            }
+        }
+
+        function animateC() {
+            ctxC.clearRect(0, 0, canvasC.width, canvasC.height);
+            particlesC.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            requestAnimationFrame(animateC);
+        }
+
+        // ============================================
+        // INICIALIZAÇÃO
+        // ============================================
+        window.addEventListener('resize', () => {
+            resizeCanvasA();
+            resizeCanvasB();
+            resizeCanvasC();
+        });
+
+        // Iniciar tudo
+        resizeCanvasA();
+        resizeCanvasB();
+        resizeCanvasC();
+        
+        initParticlesA();
+        initParticlesB();
+        initParticlesC();
+        
+        animateA();
+        animateB();
+        animateC();
+    </script>
+</body>
+</html>

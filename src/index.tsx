@@ -484,7 +484,11 @@ app.get('/', (c) => {
         <!-- 1. HERO SECTION - CONVERSÃO MÁXIMA -->
         <section class="hero-section">
             <div class="hero-overlay"></div>
-            <div class="hero-content section-container flex flex-col items-center justify-center text-center py-32 fade-in">
+            
+            <!-- Canvas de Partículas Network/Conexões -->
+            <canvas id="particlesCanvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></canvas>
+            
+            <div class="hero-content section-container flex flex-col items-center justify-center text-center py-32 fade-in" style="position: relative; z-index: 2;">
                 <!-- Conteúdo Centralizado -->
                 <div class="max-w-5xl space-y-10">
                     
@@ -1120,6 +1124,147 @@ app.get('/', (c) => {
                     whatsappBtn.style.animation = 'pulse 2s infinite';
                 }, 10);
             }, 5000);
+
+            // ============================================
+            // PARTÍCULAS NETWORK/CONEXÕES - HERO SECTION
+            // ============================================
+            const canvas = document.getElementById('particlesCanvas');
+            if (canvas) {
+                const ctx = canvas.getContext('2d');
+                let particles = [];
+                let animationId;
+
+                // Configurações (tudo no máximo como solicitado)
+                const config = {
+                    count: 150,              // Quantidade máxima
+                    speed: 3,                // Velocidade máxima
+                    opacity: 1,              // Opacidade máxima
+                    maxDistance: 150,        // Distância para conectar
+                    particleSize: 2.5,       // Tamanho das partículas
+                    lineWidth: 1.5           // Espessura das linhas
+                };
+
+                // Detectar preferência de movimento reduzido (acessibilidade)
+                const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                
+                if (prefersReducedMotion) {
+                    // Se usuário prefere movimento reduzido, não inicializar
+                    canvas.style.display = 'none';
+                } else {
+                    // Classe de Partícula
+                    class Particle {
+                        constructor() {
+                            this.reset();
+                        }
+
+                        reset() {
+                            this.x = Math.random() * canvas.width;
+                            this.y = Math.random() * canvas.height;
+                            this.size = Math.random() * config.particleSize + 1;
+                            this.speedX = (Math.random() - 0.5) * 0.5;
+                            this.speedY = (Math.random() - 0.5) * 0.5;
+                            this.opacity = Math.random() * 0.5 + 0.5;
+                        }
+
+                        update() {
+                            this.x += this.speedX * config.speed;
+                            this.y += this.speedY * config.speed;
+
+                            // Wrap around edges (efeito infinito)
+                            if (this.x > canvas.width) this.x = 0;
+                            if (this.x < 0) this.x = canvas.width;
+                            if (this.y > canvas.height) this.y = 0;
+                            if (this.y < 0) this.y = canvas.height;
+                        }
+
+                        draw() {
+                            ctx.fillStyle = '#FF7A3D';
+                            ctx.globalAlpha = this.opacity * config.opacity;
+                            ctx.beginPath();
+                            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                            ctx.fill();
+                        }
+                    }
+
+                    // Conectar partículas próximas
+                    function connectParticles() {
+                        for (let i = 0; i < particles.length; i++) {
+                            for (let j = i + 1; j < particles.length; j++) {
+                                const dx = particles[i].x - particles[j].x;
+                                const dy = particles[i].y - particles[j].y;
+                                const distance = Math.sqrt(dx * dx + dy * dy);
+
+                                if (distance < config.maxDistance) {
+                                    const opacity = (1 - distance / config.maxDistance) * 0.5;
+                                    ctx.strokeStyle = '#FF7A3D';
+                                    ctx.globalAlpha = opacity * config.opacity;
+                                    ctx.lineWidth = config.lineWidth;
+                                    ctx.beginPath();
+                                    ctx.moveTo(particles[i].x, particles[i].y);
+                                    ctx.lineTo(particles[j].x, particles[j].y);
+                                    ctx.stroke();
+                                }
+                            }
+                        }
+                    }
+
+                    // Resize canvas
+                    function resizeCanvas() {
+                        const rect = canvas.getBoundingClientRect();
+                        canvas.width = rect.width;
+                        canvas.height = rect.height;
+                        
+                        // Ajustar quantidade de partículas baseado em tamanho da tela
+                        const isMobile = window.innerWidth < 768;
+                        const particleCount = isMobile ? Math.floor(config.count * 0.5) : config.count;
+                        
+                        // Reinicializar partículas com novo tamanho
+                        particles = [];
+                        for (let i = 0; i < particleCount; i++) {
+                            particles.push(new Particle());
+                        }
+                    }
+
+                    // Animação principal
+                    function animate() {
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        
+                        particles.forEach(particle => {
+                            particle.update();
+                            particle.draw();
+                        });
+                        
+                        connectParticles();
+                        
+                        animationId = requestAnimationFrame(animate);
+                    }
+
+                    // Event listeners
+                    window.addEventListener('resize', resizeCanvas);
+                    
+                    // Pausar animação quando tab não está visível (performance)
+                    document.addEventListener('visibilitychange', () => {
+                        if (document.hidden) {
+                            if (animationId) {
+                                cancelAnimationFrame(animationId);
+                            }
+                        } else {
+                            animate();
+                        }
+                    });
+
+                    // Inicializar
+                    resizeCanvas();
+                    animate();
+
+                    // Cleanup ao desmontar (boa prática)
+                    window.addEventListener('beforeunload', () => {
+                        if (animationId) {
+                            cancelAnimationFrame(animationId);
+                        }
+                    });
+                }
+            }
         </script>
     </body>
     </html>
