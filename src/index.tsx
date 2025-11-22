@@ -506,11 +506,12 @@ app.get('/', (c) => {
                 <div class="max-w-5xl space-y-10">
                     
                     <h1 class="text-6xl lg:text-8xl font-black leading-tight">
-                        <!-- Logo integrada ao título -->
-                        <div class="flex items-center justify-center gap-4 mb-6">
-                            <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/mindinflow-logo.png" 
+                        <!-- Logo integrada ao título - Transparente com brilho -->
+                        <div class="flex items-center justify-center gap-4 mb-8">
+                            <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/favicon.png" 
                                  alt="Mind In Flow" 
-                                 class="h-20 lg:h-32 w-auto drop-shadow-2xl">
+                                 class="h-40 lg:h-64 w-auto drop-shadow-2xl"
+                                 style="filter: drop-shadow(0 0 40px rgba(255, 140, 66, 0.6));">
                         </div>
                         <span class="text-white">A Inteligência Humana por Trás da Sua</span><br>
                         <span class="gradient-text">Máquina de Conversão Digital</span>
