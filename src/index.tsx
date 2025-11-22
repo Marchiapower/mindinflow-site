@@ -1131,14 +1131,25 @@ app.get('/', (c) => {
             // ============================================
             // PARTÍCULAS NETWORK/CONEXÕES - HERO SECTION
             // ============================================
-            const canvas = document.getElementById('particlesCanvas');
-            console.log('Particles init:', {
-                canvasFound: !!canvas,
-                windowWidth: window.innerWidth,
-                windowHeight: window.innerHeight
-            });
             
-            if (canvas) {
+            // Garantir que DOM está pronto antes de inicializar
+            function initParticles() {
+                const canvas = document.getElementById('particlesCanvas');
+                console.log('Particles init attempt:', {
+                    canvasFound: !!canvas,
+                    windowWidth: window.innerWidth,
+                    windowHeight: window.innerHeight,
+                    isMobile: window.innerWidth < 768
+                });
+                
+                if (!canvas) {
+                    console.error('Canvas not found!');
+                    return;
+                }
+                
+                // Forçar display do canvas
+                canvas.style.display = 'block';
+                canvas.style.visibility = 'visible';
                 const ctx = canvas.getContext('2d');
                 let particles = [];
                 let animationId;
@@ -1230,23 +1241,22 @@ app.get('/', (c) => {
                         }
                     }
 
-                    // Resize canvas
+                    // Resize canvas - SIMPLIFICADO
                     function resizeCanvas() {
-                        // Pegar dimensões da hero-section (elemento pai)
-                        const heroSection = canvas.closest('.hero-section');
-                        if (heroSection) {
-                            const rect = heroSection.getBoundingClientRect();
-                            canvas.width = rect.width;
-                            canvas.height = rect.height;
-                            
-                            // Debug log
-                            console.log('Canvas resized:', {
-                                width: canvas.width,
-                                height: canvas.height,
-                                isMobile: window.innerWidth < 768,
-                                heroHeight: rect.height
-                            });
-                        }
+                        // Usar dimensões da janela diretamente
+                        const width = window.innerWidth;
+                        const height = window.innerHeight;
+                        
+                        canvas.width = width;
+                        canvas.height = height;
+                        
+                        // Debug log
+                        console.log('Canvas resized:', {
+                            width: canvas.width,
+                            height: canvas.height,
+                            isMobile: window.innerWidth < 768,
+                            devicePixelRatio: window.devicePixelRatio || 1
+                        });
                         
                         // Ajustar quantidade de partículas baseado em tamanho da tela
                         const isMobile = window.innerWidth < 768;
@@ -1299,6 +1309,18 @@ app.get('/', (c) => {
                         }
                     });
                 }
+            }
+            
+            // Inicializar com múltiplas tentativas
+            // Tentativa 1: Imediato
+            initParticles();
+            
+            // Tentativa 2: Após 100ms (fallback)
+            setTimeout(initParticles, 100);
+            
+            // Tentativa 3: Após DOMContentLoaded (fallback final)
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initParticles);
             }
         </script>
     </body>
