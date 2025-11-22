@@ -731,7 +731,7 @@ app.get('/', (c) => {
 
                 <!-- Propósito central - O Porquê -->
                 <div class="relative max-w-5xl mx-auto">
-                    <div class="bg-gradient-to-br from-orange-500/20 to-yellow-500/20 backdrop-blur-xl rounded-3xl p-12 lg:p-16 border-2 border-orange-500/50 shadow-2xl">
+                    <div class="bg-gradient-to-b from-gray-800/50 to-gray-900/50 backdrop-blur-xl rounded-3xl p-12 lg:p-16 border-2 border-orange-500/50 shadow-2xl">
                         <!-- Badge superior -->
                         <div class="flex justify-center mb-8">
                             <div class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full">
