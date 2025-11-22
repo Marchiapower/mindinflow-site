@@ -1,8 +1,8 @@
-# PowerBrand - Website de Autoridade
+# Mind In Flow - Website de Inteligência Comercial
 
 ## 🚀 Visão Geral do Projeto
 
-**PowerBrand** é um website de alta conversão especializado em **Inteligência Comercial**, combinando Sensibilidade Humana com Tecnologia Construtiva. O site foi desenvolvido para posicionar a marca como autoridade em consultoria de posicionamento digital, SEO e conversão de leads.
+**Mind In Flow** é um website de alta conversão especializado em **Inteligência Comercial**, combinando Sensibilidade Humana com Tecnologia Construtiva. O site foi desenvolvido para posicionar a marca como autoridade em consultoria de posicionamento digital, SEO e conversão de leads.
 
 ### Objetivos Principais
 - Demonstrar autoridade e credibilidade através de design profissional dark mode
@@ -12,77 +12,60 @@
 
 ### Principais Funcionalidades Implementadas ✅
 
-#### Estrutura Completa de 7 Seções Estratégicas (Baseado no Super Prompt)
+#### Estrutura Completa de 7 Seções Estratégicas
 
 1. **Hero Section - Conversão Máxima** 🔥 OTIMIZADO
-   - Layout 100% centralizado sem distrações (SEM logo, SEM foto)
-   - Headline gigante: "PowerBrand: A Inteligência Humana por Trás da Sua Máquina de Conversão Digital"
-   - Fonte aumentada (8xl) para máximo impacto visual
-   - CTA direto para WhatsApp em destaque (texto maior, padding aumentado)
+   - **Logo Mind In Flow integrada ao título** com efeito glow branco (320px height)
+   - Layout centralizado com logo transparente flutuando
+   - Headline gigante: "A Inteligência Humana por Trás da Sua Máquina de Conversão Digital"
+   - Fonte aumentada (6xl mobile / 8xl desktop) para máximo impacto visual
+   - CTA direto para WhatsApp em destaque
    - Centralização vertical e horizontal perfeita (100vh)
-   - Background hero mantido com overlay escuro
-   - Foco 100% na proposta de valor e conversão imediata
+   - Background hero com overlay escuro
+   - Foco na proposta de valor e conversão imediata
 
 2. **Social Proof - Prova Imediata** ✅ LOGOS REAIS
    - Grid 2x3 com 6 logos REAIS de clientes:
-     * Alma Viva (Consultório Psicologia - Andrea Cotrim) 🎨 Logo gerado com IA Recraft-v3 - **128px**
-     * Contex (Assessoria Contábil) - **128px**
-     * Insight Builders - **128px**
-     * Tina Óticas - **128px**
-     * Marlise Meneghe (Mentora) - **64px** (tamanho original mantido)
-     * Cellavi - **128px**
-   - Cards com hover effect (scale + mudança de opacidade)
-   - Spacing aumentado: gap-10 entre cards, padding-8 interno
-   - Container expandido para max-w-6xl para acomodar logos maiores
-   - Estatísticas impressionantes: 150+ projetos, 98% conversão aumentada, 7 dias entrega
-   - Título persuasivo: "Empresas de Elite que Multiplicaram o Faturamento Digital"
+     * Alma Viva (Consultório Psicologia)
+     * Contex (Assessoria Contábil)
+     * Insight Builders
+     * Tina Óticas
+     * Marlise Meneghe (Mentora)
+     * Cellavi
+   - Cards com hover effect e tamanhos otimizados
+   - Estatísticas: 150+ projetos, 98% conversão aumentada, 7 dias entrega
 
-3. **A Visão - Quebra de Monotonia** 🔥 MELHORADO + 📱 MOBILE OTIMIZADO
-   - Fundo 100% laranja/dourado sólido (quebra visual dramática)
-   - **Layout assimétrico: texto à esquerda, imagem livre à direita**
-   - **Hierarquia de manchete + submanchete + corpo de apoio**
-   - Manchete principal em fonte 6xl alinhada à esquerda
-   - Submanchete em 2xl destacando sensibilidade humana + tecnologia
-   - Corpo de apoio em caixa destacada (max-w-2xl) com borda e backdrop-blur
-   - Text-shadow para melhor legibilidade sobre fundo colorido
-   - Imagem de fundo à direita (40% width, opacity 0.25, contain mode) posicionada com margem 5%
-   - **📱 MOBILE**: Imagem de fundo oculta (display: none) para melhor legibilidade em telas pequenas
+3. **A Visão - Quebra Visual** 🔥 CENTRALIZADO + FULL-WIDTH
+   - **Layout centralizado com texto em tamanhos maiores**
+   - Manchete principal em 5xl (mobile) / 7xl (desktop)
+   - Hierarquia: manchete + submanchete + corpo
+   - Fundo 100% laranja/dourado sólido
+   - **Sem imagem de fundo para máxima clareza**
+   - Text-shadow para melhor legibilidade
 
-4. **Processo PowerBrand - Matar Objeção de Tempo**
+4. **Processo Mind In Flow - Matar Objeção de Tempo**
    - Timeline visual com 4 etapas numeradas
    - Método de 7 dias explicado em detalhes
    - Cards com hover effect e bordas laranjas
-   - Elimina a objeção "isso vai demorar muito"
 
-5. **Pilares PowerBrand - O Que Entregamos** 🎯 MELHORADO
+5. **Pilares Mind In Flow - O Que Entregamos** 🎯
    - 4 cards com efeito glow ao hover
-   - Bordas gradiente que aparecem na interação
-   - **Ícones PNG circulares personalizados gerados com IA** com fundo 100% transparente (sem quadrado branco)
-   - Círculos com gradiente laranja/dourado e animação scale+rotate no hover
-   - Ícones em 100x100px (MESMO tamanho do círculo) para preenchimento perfeito
-   - Foguete com MESMO estilo visual dos outros 3 (círculo laranja/dourado + foguete branco)
-   - Todos os 4 ícones com acabamento circular, gradiente laranja/dourado e transparente consistente
-   - Efeito visual uniforme e profissional em todos os cards
-   - Processados com rmbg (background removal) para transparência perfeita
+   - Ícones PNG circulares com fundo transparente
    - Descrição clara de cada benefício
 
-6. **Prova Definitiva - Matar Objeção de Risco** 🎯 CLIENTES REAIS ✅ FOTOS CARREGANDO
-   - Narrativa pessoal do mentor (expertise + background)
-   - Bloco destacado com história e credenciais
-   - 3 depoimentos de clientes REAIS com fotos profissionais carregando corretamente:
-     * Andrea Cotrim - Psicóloga Clínica (triplicou agendamentos em 2 meses)
-     * Bruno Prieto - Nutricionista Esportivo (cresceu 400% lista de espera + dobrou ticket médio)
-     * Marlise Meneghe - Mentora de Negócios (DEPOIMENTO AUTÊNTICO do grupo: profissionalismo + sensibilidade ímpar)
+6. **Prova Definitiva - Matar Objeção de Risco** 🎯 CLIENTES REAIS
+   - 3 depoimentos de clientes REAIS com fotos:
+     * Andrea Cotrim - Psicóloga Clínica
+     * Bruno Prieto - Nutricionista Esportivo
+     * Marlise Meneghe - Mentora de Negócios
    - Layout em grid 3 colunas responsivo
    - Sistema de 5 estrelas para credibilidade
-   - Resultados específicos e mensuráveis em cada depoimento
-   - **Depoimento Marlise**: Texto REAL adaptado de post público no grupo (ênfase em sensibilidade + técnica)
-   - **CORREÇÃO IMPLEMENTADA**: _routes.json configurado corretamente para servir imagens estáticas
+   - Resultados específicos e mensuráveis
 
 7. **CTA Final - Conversão Máxima**
    - Fundo gradiente laranja/dourado impactante
-   - Headline provocativa: "Pronto Para Parar de Ser Invisível?"
-   - Botão com borda branca e fundo preto para contraste
+   - Headline provocativa
+   - Botão com contraste
    - Gatilhos de urgência e segurança
 
 #### Funcionalidades Técnicas
@@ -90,59 +73,66 @@
 - ✅ **Botão WhatsApp Flutuante**: Animação pulse a cada 5 segundos
 - ✅ **Animações Suaves**: Fade-in progressivo ao scroll
 - ✅ **Design Responsivo**: Mobile-first e totalmente adaptável
-- ✅ **Efeitos Glow**: Bordas e sombras em laranja/dourado nos cards
+- ✅ **Efeitos Glow**: Bordas e sombras em laranja/dourado
 - ✅ **Smooth Scroll**: Navegação suave entre seções
-- ✅ **Performance Otimizada**: Bundle de 59.50 kB (otimizado)
+- ✅ **Logo com Efeito**: Glow branco + estilos inline para máxima compatibilidade
 
 ## 🌐 URLs do Projeto
 
-- **Desenvolvimento Local**: http://localhost:3000
-- **Desenvolvimento Sandbox**: https://3000-inawqi07u7hh33yzqfy06-583b4d74.sandbox.novita.ai
-- **Produção**: *Aguardando deploy no Cloudflare Pages*
-- **GitHub**: *Aguardando push do repositório*
+### URLs de Produção ✅
+- **Produção Principal**: https://powerbrand-site.pages.dev
+- **Preview Deployment**: https://f10a09e2.powerbrand-site.pages.dev
+- **GitHub Repo (Mind In Flow)**: https://github.com/Marchiapower/mindinflow-site
+- **GitHub Repo (PowerBrand - Deploy)**: https://github.com/Marchiapower/powerbrand-site
 
-### ✅ STATUS: FOTOS DOS CLIENTES CARREGANDO CORRETAMENTE
-3 depoimentos de clientes reais com fotos servindo corretamente:
-- Andrea Cotrim (Psicóloga) - ✅ Carregando
-- Bruno Prieto (Nutricionista) - ✅ Carregando
-- Marlise Meneghe (Mentora) - ✅ Carregando + DEPOIMENTO AUTÊNTICO
+### URLs de Desenvolvimento
+- **Desenvolvimento Local**: http://localhost:3000
+- **Sandbox (quando ativo)**: https://3000-*.sandbox.novita.ai
+
+### ✅ STATUS ATUAL: SITE 100% FUNCIONAL
+- ✅ **Hero Logo**: Aparecendo com glow branco (320px, estilos inline)
+- ✅ **Footer Logo**: Aparecendo com fundo circular (160px, estilos inline)
+- ✅ **Todas as imagens**: Carregando via GitHub CDN (HTTP 200)
+- ✅ **Vision Section**: Centralizada, full-width, sem imagem de fundo
+- ✅ **WhatsApp**: +55 11 91853-4654 configurado
+- ✅ **Deploy**: Cloudflare Pages ativo e atualizado
 
 ## 📊 Arquitetura de Dados
 
 ### Estrutura de Dados
-- **Modelo**: Website estático com dados fixos (não há banco de dados dinâmico nesta versão)
-- **Conteúdo**: Todo conteúdo está incorporado diretamente no HTML para máxima performance
-- **Imagens**: Servidas estaticamente via Cloudflare Pages CDN
+- **Modelo**: Website estático com dados fixos
+- **Conteúdo**: Incorporado diretamente no HTML para máxima performance
+- **Imagens**: Servidas via GitHub CDN (raw.githubusercontent.com)
 
 ### Serviços de Armazenamento
-- **Cloudflare Pages**: Hospedagem e distribuição de arquivos estáticos
-- **CDN Global**: Todas as imagens e assets são servidos via edge network
+- **Cloudflare Pages**: Hospedagem e distribuição
+- **GitHub CDN**: Todas as imagens servidas via raw.githubusercontent.com
+- **CDN Global**: Assets distribuídos via edge network
 
 ### Assets do Projeto
-- `powerbrand-logo.png` - Logo oficial da marca
-- `mentor-photo.png` - Foto do mentor para humanização (usado na seção Expertise)
+- `favicon.png` - Logo transparente com fundo removido (145KB) - **HERO LOGO**
+- `mindinflow-logo.png` - Logo com efeito glow (115KB) - **FOOTER LOGO**
 - `hero-background.jpg` - Background futurista para Hero Section
-- `vision-connection.jpg` - Imagem representando conexão humana + tecnologia
-- `icon-captacao.png` - Ícone do pilar de Captação de Leads
-- `icon-seo.png` - Ícone do pilar de SEO Performance
-- `icon-design.png` - Ícone do pilar de Design de Elite
-- `icon-entrega.png` - Ícone do pilar de Entrega Turbo
-- `andrea-cotrim.jpg` - Foto da cliente Andrea Cotrim (Psicóloga) ✅ ATIVO
-- `bruno-prieto.jpg` - Foto do cliente Bruno Prieto (Nutricionista) ✅ ATIVO
-- `marlise-meneghe.jpg` - Foto da cliente Marlise Meneghe (Mentora) ✅ ATIVO - DEPOIMENTO AUTÊNTICO
-- **Logos REAIS de Clientes (6):**
-  - `logo-alma-viva.png` - Alma Viva (Consultório de Psicologia - Andrea Cotrim) 🎨 GERADO COM IA
-  - `logo-contex.png` - Contex Assessoria Contábil
+- `vision-connection.jpg` - Imagem representando conexão (não usada atualmente)
+- `icon-captacao.png` - Ícone Captação de Leads
+- `icon-seo.png` - Ícone SEO Performance
+- `icon-design.png` - Ícone Design de Elite
+- `icon-entrega.png` - Ícone Entrega Turbo
+- `andrea-cotrim.jpg` - Foto cliente real
+- `bruno-prieto.jpg` - Foto cliente real
+- `marlise-meneghe.jpg` - Foto cliente real
+- **Logos de Clientes:**
+  - `logo-alma-viva.png` - Alma Viva
+  - `logo-contex.png` - Contex
   - `logo-insight-builders.png` - Insight Builders
   - `logo-tina-oticas.png` - Tina Óticas
-  - `logo-marlise-meneghe.png` - Marlise Meneghe Mentora
+  - `logo-marlise-meneghe.png` - Marlise Meneghe
   - `logo-cellavi.png` - Cellavi
-- `favicon.ico` / `favicon.png` - Favicons do site
 
 ## 🎨 Identidade Visual
 
-### Paleta de Cores
-- **Primary Orange**: `#FF8C42` - Destaque e CTAs
+### Paleta de Cores Mind In Flow
+- **Primary Orange**: `#FF7A3D` - Cor principal aceita pelo cliente
 - **Primary Gold**: `#FFB347` - Gradientes e elementos secundários
 - **Dark Background**: `#0a0a0a` - Background principal
 - **Dark Card**: `#1a1a1a` - Cards e seções
@@ -157,218 +147,133 @@
 ### Para Visitantes
 
 1. **Primeira Impressão**: 
-   - Ao acessar o site, você verá imediatamente a Hero Section com a proposta de valor da PowerBrand
-   - A foto do mentor humaniza a experiência e transmite confiança
+   - Logo Mind In Flow com efeito glow branco centralizada
+   - Proposta de valor clara e direta
 
 2. **Entendendo os Serviços**:
-   - Role para baixo para ver as estatísticas de resultados
-   - Leia sobre o diferencial na seção "A Visão"
-   - Conheça os 4 pilares de serviços oferecidos
+   - Estatísticas de resultados na Social Proof
+   - Diferencial na seção "A Visão" (centralizada, full-width)
+   - 4 pilares de serviços
 
 3. **Contato Direto**:
-   - Clique no botão flutuante do WhatsApp (canto inferior direito) a qualquer momento
-   - Ou use os CTAs destacados em laranja/dourado ao longo da página
-   - Todos levam diretamente ao WhatsApp com mensagem pré-preenchida
+   - Botão flutuante WhatsApp (canto inferior direito)
+   - CTAs destacados em laranja ao longo da página
+   - Número: **+55 11 91853-4654**
 
 ### Para Administradores
 
-1. **Número do WhatsApp Configurado**: ✅
-   - Número ativo: **+55 11 91853-4654**
-   - Configurado em 4 lugares:
-     * Botão flutuante (canto inferior direito)
-     * CTA Hero Section
-     * CTA Final Section
-     * Link no rodapé
+1. **Número WhatsApp**: ✅ +55 11 91853-4654
+   - Configurado em 4 lugares do site
 
-2. **Atualizar Estatísticas**:
-   - Localize a seção `<!-- Social Proof Section -->`
-   - Atualize os números conforme necessário
-
-3. **Modificar Conteúdo**:
-   - Todo conteúdo está em `/home/user/webapp/src/index.tsx`
-   - Após modificações, execute: `npm run build`
-   - Reinicie o servidor: `pm2 restart powerbrand`
+2. **Modificar Conteúdo**:
+   - Código em `/home/user/mindinflow-site/src/index.tsx`
+   - Build: `npm run build`
+   - Deploy: Push para GitHub + deploy automático
 
 ## 🛠️ Stack Tecnológica
 
 ### Backend
-- **Hono**: Framework web ultrarrápido e leve
-- **TypeScript**: Tipagem estática para maior segurança
-- **Cloudflare Workers**: Runtime edge para máxima performance
+- **Hono**: Framework web ultrarrápido
+- **TypeScript**: Tipagem estática
+- **Cloudflare Pages**: Runtime edge
 
 ### Frontend
-- **Tailwind CSS**: Framework CSS utility-first (via CDN)
-- **FontAwesome**: Ícones profissionais (via CDN)
-- **Vanilla JavaScript**: Animações e interatividade sem frameworks pesados
+- **Tailwind CSS**: Framework CSS (via CDN)
+- **FontAwesome**: Ícones (via CDN)
+- **Vanilla JavaScript**: Animações leves
 
 ### DevOps
-- **Vite**: Build tool moderna e rápida
-- **Wrangler**: CLI do Cloudflare para desenvolvimento e deploy
-- **PM2**: Process manager para ambiente de desenvolvimento
+- **Vite**: Build tool
 - **Git**: Controle de versão
+- **GitHub**: Repositório e CDN de imagens
+- **Cloudflare API**: Deploy direto via REST API
 
 ## 📦 Estrutura do Projeto
 
 ```
-webapp/
+mindinflow-site/
 ├── src/
-│   └── index.tsx           # Aplicação principal Hono com HTML completo
-├── public/                 # Assets estáticos
-│   ├── powerbrand-logo.png
-│   ├── mentor-photo.png
+│   └── index.tsx           # Aplicação principal Hono
+├── public/                 # Assets (servidos via GitHub)
+│   ├── favicon.png         # Logo transparente (hero)
+│   ├── mindinflow-logo.png # Logo com glow (footer)
 │   ├── hero-background.jpg
-│   ├── vision-connection.jpg
-│   ├── icon-captacao.png
-│   ├── icon-seo.png
-│   ├── icon-design.png
-│   ├── icon-entrega.png
-│   ├── andrea-cotrim.jpg       # Foto cliente real
-│   ├── bruno-prieto.jpg        # Foto cliente real
-│   ├── marlise-meneghe.jpg     # Foto cliente real
-│   ├── client-logos.png        # Grid logos empresas
-│   ├── favicon.ico            # Favicon
-│   └── favicon.png            # Favicon PNG
-├── dist/                   # Build output (gerado automaticamente)
-│   ├── _worker.js         # Worker compilado
-│   ├── _routes.json       # Configuração de rotas (atualizado por fix-routes.sh)
-│   └── (todas as imagens do public/)
-├── .git/                   # Repositório Git
-├── .gitignore             # Arquivos ignorados pelo Git
-├── ecosystem.config.cjs   # Configuração do PM2
-├── fix-routes.sh          # Script para corrigir _routes.json automaticamente
-├── package.json           # Dependencies e scripts
-├── tsconfig.json          # TypeScript config
-├── vite.config.ts         # Vite config
-├── wrangler.jsonc         # Cloudflare config
-└── README.md              # Esta documentação
+│   ├── (outros assets...)
+├── dist/                   # Build output
+│   └── _worker.js         # Worker compilado
+├── .git/                   # Git
+├── .gitignore
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+├── wrangler.jsonc
+└── README.md
 ```
 
 ## 🚀 Deploy e Configuração
 
-### Status Atual
-- ✅ **Desenvolvimento Local**: Funcionando perfeitamente
-- ✅ **Build**: Compilado com sucesso (64.56 kB)
-- ✅ **Servidor PM2**: Online e estável (restart #28)
-- ✅ **WhatsApp**: Número real configurado (+55 11 91853-4654)
-- ✅ **Fotos dos Clientes**: 3 depoimentos carregando corretamente (Andrea, Bruno, Marlise)
-- ✅ **Logos Clientes**: 6 logos REAIS carregando - 5x em 128px + Marlise em 64px
-- ✅ **Script _routes.json**: Automação implementada (fix-routes.sh)
-- ✅ **Layout Depoimentos**: Grid 3 colunas responsivo
-- ✅ **Depoimento Marlise**: AUTÊNTICO do grupo (profissionalismo + sensibilidade ímpar)
-- ✅ **Mobile Otimizado**: Imagem vision-section oculta em telas < 768px
-- ⏳ **GitHub**: Aguardando push
-- ⏳ **Cloudflare Pages**: Aguardando deploy de produção
+### Status Atual ✅
+- ✅ **Produção**: https://powerbrand-site.pages.dev (ativo)
+- ✅ **Build**: Compilado com sucesso (73.33 kB)
+- ✅ **Hero Logo**: Aparecendo corretamente com glow branco
+- ✅ **Footer Logo**: Aparecendo corretamente com fundo circular
+- ✅ **Vision Section**: Centralizada e full-width
+- ✅ **Todas as imagens**: HTTP 200 via GitHub CDN
+- ✅ **GitHub**: Código sincronizado em 2 repositórios
+- ✅ **WhatsApp**: Número real configurado
 
 ### Comandos Disponíveis
 
 ```bash
-# Desenvolvimento
-npm run dev                 # Vite dev server
-npm run dev:sandbox        # Wrangler local (usado pelo PM2)
-
 # Build
 npm run build              # Compilar para produção
 
-# Deploy
-npm run deploy             # Build + Deploy para Cloudflare Pages
-npm run deploy:prod        # Deploy com nome do projeto específico
-
-# Manutenção
-npm run clean-port         # Limpar porta 3000
-npm run test               # Testar servidor local
-
 # Git
-npm run git:status         # Ver status do Git
-npm run git:log            # Ver histórico de commits
-npm run git:commit -- "msg" # Commit rápido
+git add .
+git commit -m "mensagem"
+git push origin main       # Push para mindinflow-site
+git push powerbrand main   # Push para powerbrand-site (deploy)
+
+# Deploy via API Cloudflare
+curl -X POST "https://api.cloudflare.com/client/v4/accounts/{account}/pages/projects/powerbrand-site/deployments" \
+  -H "Authorization: Bearer $TOKEN" \
+  -F "branch=main"
 ```
 
-### Próximos Passos Recomendados
+## 🔧 Correções Implementadas
 
-1. **Personalização do Conteúdo** 📝
-   - Atualizar número do WhatsApp para o real
-   - Revisar e ajustar textos conforme necessário
-   - Adicionar depoimentos de clientes reais (se disponível)
+### Problema: Logos não apareciam
+**Causa Raiz**: Classe `h-128` não existe no Tailwind CSS (máximo é `h-96`)
 
-2. **Deploy para Produção** 🌐
-   - Configurar conta Cloudflare Pages
-   - Executar `setup_cloudflare_api_key`
-   - Deploy com `npm run deploy:prod`
+**Solução Aplicada**:
+1. ✅ Removida classe inválida `h-128` do hero logo
+2. ✅ Adicionados estilos inline: `style="height: 320px; max-height: 512px;"`
+3. ✅ Removida classe `w-40` do footer logo, adicionado `style="width: 160px;"`
+4. ✅ Adicionados `onload` handlers para debug
+5. ✅ Confirmado que `display: block` está aplicado
 
-3. **Integração GitHub** 🔗
-   - Executar `setup_github_environment`
-   - Fazer push do código para repositório
-   - Configurar CI/CD automático
-
-4. **Otimizações SEO** 🔍
-   - Adicionar meta tags Open Graph
-   - Implementar schema.org markup
-   - Configurar sitemap.xml
-   - Adicionar Google Analytics
-
-5. **Integrações Avançadas** 🤖
-   - Implementar chatbot com IA
-   - Adicionar formulário de captura de leads
-   - Integrar com CRM
-   - Implementar tracking de conversões
-
-6. **Performance** ⚡
-   - Otimizar imagens (WebP, lazy loading)
-   - Implementar service worker para PWA
-   - Configurar caching headers
-   - Minificar assets
+### Resultado: ✅ LOGOS 100% FUNCIONAIS
 
 ## 📊 Métricas de Performance
 
 ### Build Output
-- **Tamanho do Worker**: 41.92 kB (otimizado)
-- **Tempo de Build**: ~320ms
+- **Tamanho do Worker**: 73.33 kB
+- **Tempo de Build**: ~465ms
 - **Módulos Transformados**: 27
 
-### Lighthouse (Estimado)
-- **Performance**: 95+ (edge rendering)
-- **Accessibility**: 90+ (semantic HTML)
-- **Best Practices**: 95+ (HTTPS, security headers)
-- **SEO**: 90+ (meta tags, structured content)
+### Deployment
+- **Última versão**: f10a09e2-2f88-4745-808e-1bc49d9aee10
+- **Status**: Success (deploy stage)
+- **Timestamp**: 2025-11-22 12:22
 
-## 🔧 Troubleshooting
+## 📞 Contato
 
-### Servidor não inicia
-```bash
-# Verificar porta ocupada
-fuser -k 3000/tcp
-
-# Verificar logs do PM2
-pm2 logs powerbrand --nostream
-
-# Rebuild completo
-npm run build && pm2 restart powerbrand
-```
-
-### Imagens não carregam
-- ✅ **SOLUÇÃO IMPLEMENTADA**: Configurar `_routes.json` corretamente
-- **Problema**: Wrangler Pages usa `_routes.json` para determinar quais URLs são servidas como estáticas
-- **Solução**: Adicionar todas as imagens .jpg, .png, .ico ao array `exclude` do `_routes.json`
-- **Automação**: Script `fix-routes.sh` atualiza automaticamente após cada build
-- **Como usar**: Execute `npm run build` (já inclui o script de correção)
-- Verificar se as imagens estão em `/home/user/webapp/public/`
-- Confirmar que o build foi executado após adicionar novas imagens
-
-### Erro no Build
-```bash
-# Limpar cache e reinstalar
-rm -rf node_modules dist .wrangler
-npm install
-npm run build
-```
-
-## 📞 Contato e Suporte
-
-Para suporte técnico ou dúvidas sobre o projeto, entre em contato através do WhatsApp configurado no site.
+**WhatsApp**: +55 11 91853-4654
 
 ---
 
-**Última Atualização**: 2025-11-19  
-**Versão**: 1.0.0  
-**Desenvolvido por**: PowerBrand Team  
-**Tecnologia**: Hono + Cloudflare Pages + TypeScript + Tailwind CSS
+**Última Atualização**: 2025-11-22  
+**Versão**: 1.0.0 (Mind In Flow)  
+**Projeto Base**: Adaptado de PowerBrand  
+**Tecnologia**: Hono + Cloudflare Pages + TypeScript + Tailwind CSS  
+**Deploy**: Cloudflare Pages via API + GitHub CDN
