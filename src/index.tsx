@@ -337,8 +337,8 @@ app.get('/', (c) => {
                 position: absolute;
                 top: 50%;
                 right: 5%;
-                width: 40%;
-                height: 80%;
+                width: 25%;
+                height: 60%;
                 transform: translateY(-50%);
                 background: url('https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/vision-connection.jpg') center right/contain no-repeat;
                 opacity: 0.25;
