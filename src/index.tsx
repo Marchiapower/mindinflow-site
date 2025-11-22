@@ -332,24 +332,7 @@ app.get('/', (c) => {
                 overflow: hidden;
             }
             
-            .vision-section::before {
-                content: '';
-                position: absolute;
-                top: 50%;
-                right: 5%;
-                width: 25%;
-                height: 60%;
-                transform: translateY(-50%);
-                background: url('https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/vision-connection.jpg') center right/contain no-repeat;
-                opacity: 0.25;
-            }
-            
-            /* Ocultar imagem de fundo apenas em mobile */
-            @media (max-width: 768px) {
-                .vision-section::before {
-                    display: none;
-                }
-            }
+            /* Removida imagem de fundo - mensagem toma todo o espaço */
             
             /* Melhor contraste para textos na Vision Section */
             .vision-section .drop-shadow-lg {
