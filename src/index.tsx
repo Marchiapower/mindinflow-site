@@ -36,7 +36,7 @@ app.get('/', (c) => {
         <meta property="og:url" content="https://powerbrand.pages.dev/">
         <meta property="og:title" content="Mind In Flow - Consultoria de Posicionamento Digital e Conversão">
         <meta property="og:description" content="Transformamos sua presença digital em máquina de conversão. Método Mind In Flow: 7 dias para autoridade digital. Consultoria especializada em SEO, design e captação de leads.">
-        <meta property="og:image" content="https://powerbrand.pages.dev/hero-background.jpg">
+        <meta property="og:image" content="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/hero-background.jpg">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
         <meta property="og:locale" content="pt_BR">
@@ -47,7 +47,7 @@ app.get('/', (c) => {
         <meta name="twitter:url" content="https://powerbrand.pages.dev/">
         <meta name="twitter:title" content="Mind In Flow - Consultoria de Posicionamento Digital">
         <meta name="twitter:description" content="Transformamos sua presença digital em máquina de conversão. Método Mind In Flow: 7 dias para autoridade digital.">
-        <meta name="twitter:image" content="https://powerbrand.pages.dev/hero-background.jpg">
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/hero-background.jpg">
         
         <!-- Additional SEO -->
         <meta name="theme-color" content="#FF8C42">
@@ -57,12 +57,12 @@ app.get('/', (c) => {
         <meta name="format-detection" content="telephone=no">
         
         <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="/favicon.ico">
-        <link rel="icon" type="image/png" href="/mindinflow-logo.png">
-        <link rel="apple-touch-icon" href="/mindinflow-logo.png">
+        <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/favicon.ico">
+        <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/mindinflow-logo.png">
+        <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/mindinflow-logo.png">
         
         <!-- Preload Critical Resources -->
-        <link rel="preload" href="/hero-background.jpg" as="image" type="image/jpeg">
+        <link rel="preload" href="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/hero-background.jpg" as="image" type="image/jpeg">
         <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
         <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
         <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
@@ -221,7 +221,7 @@ app.get('/', (c) => {
             }
             
             .hero-section {
-                background-image: url('/hero-background.jpg');
+                background-image: url('https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/hero-background.jpg');
                 background-size: cover;
                 background-position: center;
                 background-attachment: fixed;
@@ -340,7 +340,7 @@ app.get('/', (c) => {
                 width: 40%;
                 height: 80%;
                 transform: translateY(-50%);
-                background: url('/vision-connection.jpg') center right/contain no-repeat;
+                background: url('https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/vision-connection.jpg') center right/contain no-repeat;
                 opacity: 0.25;
             }
             
@@ -544,42 +544,42 @@ app.get('/', (c) => {
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto items-center">
                         <!-- Alma Viva - Consultório de Psicologia -->
                         <div class="flex items-center justify-center p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
-                            <img src="/logo-alma-viva.png" 
+                            <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/logo-alma-viva.png" 
                                  alt="Alma Viva - Consultório de Psicologia" 
                                  class="max-h-32 w-auto opacity-80 hover:opacity-100 transition-opacity">
                         </div>
                         
                         <!-- Contex -->
                         <div class="flex items-center justify-center p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
-                            <img src="/logo-contex.png" 
+                            <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/logo-contex.png" 
                                  alt="Contex Assessoria Contábil" 
                                  class="max-h-32 w-auto opacity-80 hover:opacity-100 transition-opacity">
                         </div>
                         
                         <!-- Insight Builders -->
                         <div class="flex items-center justify-center p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
-                            <img src="/logo-insight-builders.png" 
+                            <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/logo-insight-builders.png" 
                                  alt="Insight Builders" 
                                  class="max-h-32 w-auto opacity-80 hover:opacity-100 transition-opacity">
                         </div>
                         
                         <!-- Tina Óticas -->
                         <div class="flex items-center justify-center p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
-                            <img src="/logo-tina-oticas.png" 
+                            <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/logo-tina-oticas.png" 
                                  alt="Tina Óticas" 
                                  class="max-h-32 w-auto opacity-80 hover:opacity-100 transition-opacity">
                         </div>
                         
                         <!-- Marlise Meneghe -->
                         <div class="flex items-center justify-center p-6 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
-                            <img src="/logo-marlise-meneghe.png" 
+                            <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/logo-marlise-meneghe.png" 
                                  alt="Marlise Meneghe Mentora" 
                                  class="max-h-16 w-auto opacity-80 hover:opacity-100 transition-opacity">
                         </div>
                         
                         <!-- Cellavi -->
                         <div class="flex items-center justify-center p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
-                            <img src="/logo-cellavi.png" 
+                            <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/logo-cellavi.png" 
                                  alt="Cellavi" 
                                  class="max-h-32 w-auto opacity-80 hover:opacity-100 transition-opacity">
                         </div>
@@ -734,7 +734,7 @@ app.get('/', (c) => {
                 <!-- Pillar 1: Tecnologia de Captação -->
                 <div class="card-pillar">
                     <div class="icon-circle">
-                        <img src="/icon-captacao.png" alt="Tecnologia de Captação" class="icon-img">
+                        <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/icon-captacao.png" alt="Tecnologia de Captação" class="icon-img">
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4 gradient-text">
                         Tecnologia de Captação
@@ -748,7 +748,7 @@ app.get('/', (c) => {
                 <!-- Pillar 2: Performance SEO Max -->
                 <div class="card-pillar">
                     <div class="icon-circle">
-                        <img src="/icon-seo.png" alt="Performance SEO Max" class="icon-img">
+                        <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/icon-seo.png" alt="Performance SEO Max" class="icon-img">
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4 gradient-text">
                         Performance SEO Max
@@ -762,7 +762,7 @@ app.get('/', (c) => {
                 <!-- Pillar 3: Design de Elite -->
                 <div class="card-pillar">
                     <div class="icon-circle">
-                        <img src="/icon-design.png" alt="Design de Elite" class="icon-img">
+                        <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/icon-design.png" alt="Design de Elite" class="icon-img">
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4 gradient-text">
                         Design de Elite
@@ -776,7 +776,7 @@ app.get('/', (c) => {
                 <!-- Pillar 4: Entrega Turbo -->
                 <div class="card-pillar">
                     <div class="icon-circle">
-                        <img src="/icon-entrega.png" alt="Entrega Turbo" class="icon-img">
+                        <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/icon-entrega.png" alt="Entrega Turbo" class="icon-img">
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4 gradient-text">
                         Entrega Turbo & Suporte Premium
@@ -802,7 +802,7 @@ app.get('/', (c) => {
             <div class="expertise-highlight mb-16 max-w-5xl mx-auto">
                 <div class="flex flex-col lg:flex-row gap-8 items-center">
                     <div class="lg:w-1/3">
-                        <img src="/mentor-photo.png" 
+                        <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/mentor-photo.png" 
                              alt="Mentor Mind In Flow" 
                              class="rounded-xl shadow-xl border-2 border-orange-500/30 w-full">
                     </div>
@@ -830,7 +830,7 @@ app.get('/', (c) => {
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="testimonial-card">
                     <div class="flex items-center mb-4">
-                        <img src="/andrea-cotrim.jpg" alt="Andrea Cotrim" class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-orange-500/30">
+                        <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/andrea-cotrim.jpg" alt="Andrea Cotrim" class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-orange-500/30">
                         <div>
                             <p class="font-bold text-lg">Andrea Cotrim</p>
                             <p class="text-sm text-gray-400">Psicóloga Clínica</p>
@@ -852,7 +852,7 @@ app.get('/', (c) => {
                 
                 <div class="testimonial-card">
                     <div class="flex items-center mb-4">
-                        <img src="/bruno-prieto.jpg" alt="Bruno Prieto" class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-orange-500/30">
+                        <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/bruno-prieto.jpg" alt="Bruno Prieto" class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-orange-500/30">
                         <div>
                             <p class="font-bold text-lg">Bruno Prieto</p>
                             <p class="text-sm text-gray-400">Nutricionista Esportivo</p>
@@ -874,7 +874,7 @@ app.get('/', (c) => {
                 
                 <div class="testimonial-card">
                     <div class="flex items-center mb-4">
-                        <img src="/marlise-meneghe.jpg" alt="Marlise Meneghe" class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-orange-500/30">
+                        <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/marlise-meneghe.jpg" alt="Marlise Meneghe" class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-orange-500/30">
                         <div>
                             <p class="font-bold text-lg">Marlise Meneghe</p>
                             <p class="text-sm text-gray-400">Mentora de Negócios</p>
@@ -902,7 +902,7 @@ app.get('/', (c) => {
             <div class="section-container">
                 <div class="bg-gradient-to-r from-orange-600 to-orange-400 rounded-3xl p-12 lg:p-16 text-center shadow-2xl relative overflow-hidden">
                     <div class="absolute inset-0 opacity-10">
-                        <div class="absolute inset-0" style="background-image: url('/hero-background.jpg'); background-size: cover; background-position: center;"></div>
+                        <div class="absolute inset-0" style="background-image: url('https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/hero-background.jpg'); background-size: cover; background-position: center;"></div>
                     </div>
                     <div class="relative z-10">
                         <h2 class="text-4xl lg:text-6xl font-black mb-6 text-white">
@@ -930,7 +930,7 @@ app.get('/', (c) => {
         <!-- Footer -->
         <footer class="bg-black py-12 mt-20 border-t border-orange-500/20">
             <div class="section-container text-center">
-                <img src="/mindinflow-logo.png" alt="Mind In Flow Logo" class="w-40 mx-auto mb-6 opacity-80 rounded-full bg-white/10 p-3">
+                <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/mindinflow-logo.png" alt="Mind In Flow Logo" class="w-40 mx-auto mb-6 opacity-80 rounded-full bg-white/10 p-3">
                 <p class="text-gray-400 mb-2 text-lg font-medium">
                     &copy; 2024 Mind In Flow - Inteligência Comercial
                 </p>
