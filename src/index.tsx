@@ -596,9 +596,9 @@ app.get('/', (c) => {
         <!-- 3. A VISÃO (QUEBRANDO A MONOTONIA) -->
         <section class="vision-section fade-in">
             <div class="section-container relative z-10">
-                <div class="max-w-4xl text-left">
+                <div class="text-center mx-auto">
                     <!-- MANCHETE PRINCIPAL - Impacto máximo -->
-                    <h2 class="text-4xl lg:text-6xl font-black mb-8 leading-tight">
+                    <h2 class="text-5xl lg:text-7xl font-black mb-12 leading-tight">
                         <span class="text-white">A Diferença Entre Ter</span><br>
                         <span class="text-black drop-shadow-lg">Visibilidade Orgânica</span><br>
                         <span class="text-white">e Ter</span><br>
@@ -606,25 +606,25 @@ app.get('/', (c) => {
                     </h2>
                     
                     <!-- SUBMANCHETE - Qualificação e diferencial -->
-                    <div class="mb-10">
-                        <p class="text-xl lg:text-2xl text-white leading-relaxed font-bold mb-2">
+                    <div class="mb-12 max-w-5xl mx-auto">
+                        <p class="text-2xl lg:text-3xl text-white leading-relaxed font-bold mb-4">
                             Trabalhamos com <span class="text-black drop-shadow-md">sensibilidade e humanidade</span><br>
                             para entender a sua essência,
                         </p>
-                        <p class="text-xl lg:text-2xl text-white leading-relaxed font-bold">
+                        <p class="text-2xl lg:text-3xl text-white leading-relaxed font-bold">
                             mas aplicamos a melhor <span class="text-black drop-shadow-md">Tecnologia Construtiva</span><br>
                             em cada projeto.
                         </p>
                     </div>
                     
                     <!-- CORPO DE APOIO - CTA soft e prova -->
-                    <div class="bg-black/25 backdrop-blur-sm rounded-2xl p-8 border-2 border-white/40 max-w-2xl shadow-2xl">
-                        <p class="text-lg lg:text-xl text-white leading-relaxed font-semibold mb-4">
+                    <div class="bg-black/25 backdrop-blur-sm rounded-2xl p-10 border-2 border-white/40 max-w-4xl mx-auto shadow-2xl">
+                        <p class="text-xl lg:text-2xl text-white leading-relaxed font-semibold mb-6">
                             Esta é a única forma de garantir que o seu site
                             não apenas <strong class="text-black">apareça no Google</strong>, 
                             mas que <strong class="text-black">converta visitantes em clientes</strong>.
                         </p>
-                        <div class="flex items-center gap-3 text-base text-white/95 font-medium mt-4">
+                        <div class="flex items-center justify-center gap-3 text-lg text-white/95 font-medium mt-6">
                             <i class="fas fa-arrow-right text-black"></i>
                             <span>Damos consultoria de posicionamento digital e conversão de lead.</span>
                         </div>
