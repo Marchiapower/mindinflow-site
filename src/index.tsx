@@ -635,17 +635,8 @@ app.get('/', (c) => {
         </section>
 
         <!-- 3.5 PROPOSTA DE VALOR ÚNICA - TUDO EM UM SÓ LUGAR -->
-        <section class="relative py-32 overflow-hidden" style="opacity: 1 !important;">
-            <!-- Background gradiente animado -->
-            <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900"></div>
-            
-            <!-- Efeito de brilho sutil -->
-            <div class="absolute inset-0 opacity-20">
-                <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500 rounded-full blur-3xl animate-pulse"></div>
-                <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-yellow-500 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
-            </div>
-
-            <div class="section-container relative z-10">
+        <section class="bg-black py-32" style="opacity: 1 !important;">
+            <div class="section-container">
                 <!-- Headline de impacto -->
                 <div class="text-center mb-20">
                     <div class="inline-block mb-6">
@@ -775,9 +766,6 @@ app.get('/', (c) => {
                         </div>
                     </div>
 
-                    <!-- Efeitos decorativos ao redor do card central -->
-                    <div class="absolute -top-10 -left-10 w-32 h-32 bg-orange-500/20 rounded-full blur-3xl"></div>
-                    <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-yellow-500/20 rounded-full blur-3xl"></div>
                 </div>
             </div>
         </section>
