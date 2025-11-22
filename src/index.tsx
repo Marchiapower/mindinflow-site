@@ -635,7 +635,7 @@ app.get('/', (c) => {
         </section>
 
         <!-- 3.5 PROPOSTA DE VALOR ÚNICA - TUDO EM UM SÓ LUGAR -->
-        <section class="relative py-32 fade-in overflow-hidden">
+        <section class="relative py-32 overflow-hidden" style="opacity: 1 !important;">
             <!-- Background gradiente animado -->
             <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900"></div>
             
