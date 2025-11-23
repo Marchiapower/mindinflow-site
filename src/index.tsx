@@ -1160,9 +1160,9 @@ app.get('/', (c) => {
                     maxDistance: 150,        // Distância para conectar
                     particleSize: 2.5,       // Tamanho das partículas
                     lineWidth: 1.5,          // Espessura das linhas
-                    // Mobile configs
-                    mobileOpacity: 1,        // Opacidade normal no mobile
-                    mobileParticleSize: 5    // Partículas MUITO maiores no mobile (5px)
+                    // Mobile configs (agora igual ao PC)
+                    mobileOpacity: 1,        // Opacidade igual ao PC
+                    mobileParticleSize: 2.5  // Tamanho igual ao PC (não mais 5px)
                 };
 
                 // Detectar preferência de movimento reduzido (acessibilidade)
@@ -1221,7 +1221,7 @@ app.get('/', (c) => {
                     function connectParticles() {
                         const isMobile = window.innerWidth < 768;
                         const baseOpacity = isMobile ? config.mobileOpacity : config.opacity;
-                        const lineWidth = isMobile ? config.lineWidth * 1.5 : config.lineWidth;
+                        const lineWidth = config.lineWidth; // Mesmo lineWidth para mobile e PC
                         
                         for (let i = 0; i < particles.length; i++) {
                             for (let j = i + 1; j < particles.length; j++) {
@@ -1230,8 +1230,8 @@ app.get('/', (c) => {
                                 const distance = Math.sqrt(dx * dx + dy * dy);
 
                                 if (distance < config.maxDistance) {
-                                    // Aumentar opacidade das linhas no mobile
-                                    const lineOpacity = isMobile ? 0.7 : 0.5;
+                                    // Mesma opacidade das linhas para mobile e PC
+                                    const lineOpacity = 0.5;
                                     const opacity = (1 - distance / config.maxDistance) * lineOpacity;
                                     ctx.strokeStyle = '#FF7A3D';
                                     ctx.globalAlpha = opacity * baseOpacity;
