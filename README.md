@@ -15,7 +15,13 @@
 #### Estrutura Completa de 7 Seções Estratégicas
 
 1. **Hero Section - Conversão Máxima** 🔥 OTIMIZADO
-   - **Logo Mind In Flow integrada ao título** com efeito glow branco (320px height)
+   - **Logo Mind In Flow integrada ao título** (416px height - 30% maior)
+   - **Logo atualizado**:
+     * "Mind In Flow": Texto preto com brilho branco FORTE interno (radius 6px, opacity 0.9)
+     * "INTELIGÊNCIA COMERCIAL": Texto laranja (#FF7A3D) com letter-spacing para mesma largura
+     * Sem contorno branco artificial - brilho CSS reduzido para 5px/0.3
+     * Ambas as linhas com mesma largura (775px) perfeitamente alinhadas
+   - **Partículas unificadas**: Mobile e PC com mesma intensidade (2.5px, opacity 0.5)
    - Layout centralizado com logo transparente flutuando
    - Headline gigante: "A Inteligência Humana por Trás da Sua Máquina de Conversão Digital"
    - Fonte aumentada (6xl mobile / 8xl desktop) para máximo impacto visual
