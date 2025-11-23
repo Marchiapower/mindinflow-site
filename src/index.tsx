@@ -938,7 +938,7 @@ app.get('/', (c) => {
                              class="rounded-xl shadow-xl border-2 border-orange-500/30 w-full">
                         <div class="text-center mt-4">
                             <h3 class="text-2xl font-black text-white mb-1">Marcelo Chiappetta</h3>
-                            <p class="text-orange-400 font-semibold text-lg">Fundador & Estrategista Digital</p>
+                            <p class="text-orange-400 font-semibold text-lg">Fundador & Estrategista Comercial</p>
                         </div>
                     </div>
                     <div class="lg:w-2/3">
