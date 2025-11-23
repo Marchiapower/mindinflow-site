@@ -934,8 +934,12 @@ app.get('/', (c) => {
                 <div class="flex flex-col lg:flex-row gap-8 items-center">
                     <div class="lg:w-1/3">
                         <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/mentor-photo.png" 
-                             alt="Mentor Mind In Flow" 
+                             alt="Marcelo Chiappetta - Fundador Mind In Flow" 
                              class="rounded-xl shadow-xl border-2 border-orange-500/30 w-full">
+                        <div class="text-center mt-4">
+                            <h3 class="text-2xl font-black text-white mb-1">Marcelo Chiappetta</h3>
+                            <p class="text-orange-400 font-semibold text-lg">Fundador & Estrategista Digital</p>
+                        </div>
                     </div>
                     <div class="lg:w-2/3">
                         <p class="text-xl text-gray-300 leading-relaxed mb-6">
