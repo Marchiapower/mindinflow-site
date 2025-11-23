@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "mindinflow-site",
-  "compatibility_date": "2025-11-19",
+  "compatibility_date": "2024-01-01",
   "pages_build_output_dir": "./dist",
   
   // Flags de compatibilidade para melhor performance
