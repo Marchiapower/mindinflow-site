@@ -1067,7 +1067,7 @@ app.get('/', (c) => {
             <div class="section-container text-center">
                 <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/mindinflow-logo.png" alt="Mind In Flow Logo" class="mx-auto mb-6 rounded-full bg-white/10 p-3" style="width: 160px; opacity: 0.8; display: block;" onload="console.log('Footer logo loaded')">
                 <p class="text-gray-400 mb-2 text-lg font-medium">
-                    &copy; 2024 Mind In Flow - Inteligência Comercial
+                    &copy; 2025 Mind In Flow - Inteligência Comercial
                 </p>
                 <p class="text-gray-500">
                     Sensibilidade Humana + Tecnologia Construtiva
