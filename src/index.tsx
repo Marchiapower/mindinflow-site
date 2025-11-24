@@ -98,6 +98,7 @@ app.get('/', (c) => {
         <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/mindinflow-logo.png">
         
         <!-- Preload Critical Resources -->
+        <link rel="preload" href="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/favicon.png" as="image" type="image/png" fetchpriority="high">
         <link rel="preload" href="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/hero-background.jpg" as="image" type="image/jpeg">
         <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
         <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
@@ -533,10 +534,13 @@ app.get('/', (c) => {
                     <h1 class="text-5xl lg:text-7xl font-black leading-tight">
                         <!-- Logo integrada ao título - Responsiva sem distorção -->
                         <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/favicon.png" 
-                             alt="Mind In Flow" 
+                             alt="Mind In Flow - Inteligência Comercial" 
+                             width="420" 
+                             height="280"
                              class="mx-auto mb-6"
                              style="width: 85%; max-width: 420px; height: auto; filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));"
-                             onload="this.style.display='block'">
+                             loading="eager"
+                             fetchpriority="high">
                         <span class="text-white">A Inteligência Humana Conectando Possibilidades</span><br>
                         <span class="text-white">por Trás da Sua</span><br>
                         <span class="gradient-text">Máquina de Conversão Digital</span>
