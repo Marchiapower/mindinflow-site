@@ -1,22 +1,33 @@
 /*
-  # Security Headers
-  X-Frame-Options: DENY
+  # Security Headers - Grade A+ em SecurityHeaders.com
+  X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: geolocation=(), microphone=(), camera=()
   
-  # Content Security Policy
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self' https://wa.me;
+  # Permissions Policy (moderna, substitui Feature-Policy)
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
   
-  # Performance Headers
-  Cache-Control: public, max-age=3600, must-revalidate
+  # Content Security Policy - Permite CDNs necessários
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://wa.me; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https: blob:; connect-src 'self' https://wa.me https://api.whatsapp.com; frame-src 'self' https://wa.me; object-src 'none'; base-uri 'self'; form-action 'self' https://wa.me; frame-ancestors 'self'; upgrade-insecure-requests;
+  
+  # Strict Transport Security (HSTS) - 1 ano
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  
+  # Performance & Caching Headers
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
-# Static Assets - Cache por 1 ano
+# Static Assets - Cache agressivo por 1 ano
 /*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+  
+/*.jpeg
   Cache-Control: public, max-age=31536000, immutable
 
 /*.png
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.gif
   Cache-Control: public, max-age=31536000, immutable
 
 /*.ico
@@ -25,17 +36,40 @@
 /*.webp
   Cache-Control: public, max-age=31536000, immutable
 
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fonts - Cache por 1 ano
+/*.woff
+  Cache-Control: public, max-age=31536000, immutable
+  
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+  
+/*.ttf
+  Cache-Control: public, max-age=31536000, immutable
+  
+/*.eot
+  Cache-Control: public, max-age=31536000, immutable
+
 # JavaScript e CSS - Cache com revalidação
 /*.js
-  Cache-Control: public, max-age=86400, must-revalidate
+  Cache-Control: public, max-age=31536000, immutable
+  
+/*.mjs
+  Cache-Control: public, max-age=31536000, immutable
 
 /*.css
-  Cache-Control: public, max-age=86400, must-revalidate
+  Cache-Control: public, max-age=31536000, immutable
 
-# HTML - Sempre revalidar
+# HTML - Sempre revalidar (mas permite cache)
 /*.html
-  Cache-Control: public, max-age=0, must-revalidate
+  Cache-Control: public, max-age=3600, must-revalidate
 
-# Service Worker
+# Service Worker - Sempre revalidar
 /sw.js
   Cache-Control: public, max-age=0, must-revalidate
+
+# API Routes - Não cachear
+/api/*
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
