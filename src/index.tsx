@@ -1162,11 +1162,11 @@ app.get('/', (c) => {
                     speed: 3,                // Velocidade máxima
                     opacity: 1,              // Opacidade máxima
                     maxDistance: 150,        // Distância para conectar
-                    particleSize: 2.5,       // Tamanho das partículas
-                    lineWidth: 1.5,          // Espessura das linhas
+                    particleSize: 4,         // Tamanho das partículas AUMENTADO (2.5 → 4)
+                    lineWidth: 2.5,          // Espessura das linhas AUMENTADA (1.5 → 2.5)
                     // Mobile configs (agora igual ao PC)
                     mobileOpacity: 1,        // Opacidade igual ao PC
-                    mobileParticleSize: 2.5  // Tamanho igual ao PC (não mais 5px)
+                    mobileParticleSize: 4    // Tamanho igual ao PC
                 };
 
                 // Detectar preferência de movimento reduzido (acessibilidade)
@@ -1188,10 +1188,10 @@ app.get('/', (c) => {
                         reset() {
                             this.x = Math.random() * canvas.width;
                             this.y = Math.random() * canvas.height;
-                            this.size = Math.random() * config.particleSize + 1;
+                            this.size = Math.random() * config.particleSize + 1.5; // Tamanho base aumentado (1 → 1.5)
                             this.speedX = (Math.random() - 0.5) * 0.5;
                             this.speedY = (Math.random() - 0.5) * 0.5;
-                            this.opacity = Math.random() * 0.5 + 0.5;
+                            this.opacity = Math.random() * 0.3 + 0.7; // Opacidade mais forte (0.5-1.0 → 0.7-1.0)
                         }
 
                         update() {
@@ -1234,8 +1234,8 @@ app.get('/', (c) => {
                                 const distance = Math.sqrt(dx * dx + dy * dy);
 
                                 if (distance < config.maxDistance) {
-                                    // Mesma opacidade das linhas para mobile e PC
-                                    const lineOpacity = 0.5;
+                                    // Mesma opacidade das linhas para mobile e PC (AUMENTADA 0.5 → 0.8)
+                                    const lineOpacity = 0.8;
                                     const opacity = (1 - distance / config.maxDistance) * lineOpacity;
                                     ctx.strokeStyle = '#FF7A3D';
                                     ctx.globalAlpha = opacity * baseOpacity;
