@@ -495,11 +495,11 @@ app.get('/', (c) => {
                 <div class="max-w-5xl space-y-8">
                     
                     <h1 class="text-5xl lg:text-7xl font-black leading-tight">
-                        <!-- Logo integrada ao título - Reduzida para caber above the fold -->
+                        <!-- Logo integrada ao título - Responsiva sem distorção -->
                         <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/favicon.png" 
                              alt="Mind In Flow" 
-                             class="mx-auto mb-6 w-auto"
-                             style="height: 320px; max-height: 380px; filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));"
+                             class="mx-auto mb-6"
+                             style="width: 85%; max-width: 420px; height: auto; filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));"
                              onload="this.style.display='block'">
                         <span class="text-white">A Inteligência Humana Conectando Possibilidades</span><br>
                         <span class="text-white">por Trás da Sua</span><br>
