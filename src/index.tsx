@@ -3,6 +3,46 @@ import { cors } from 'hono/cors'
 
 const app = new Hono()
 
+// Security Headers Middleware - Apply to ALL routes
+app.use('*', async (c, next) => {
+  await next()
+  
+  // Set security headers
+  c.header('X-Frame-Options', 'SAMEORIGIN')
+  c.header('X-Content-Type-Options', 'nosniff')
+  c.header('X-XSS-Protection', '1; mode=block')
+  c.header('Referrer-Policy', 'strict-origin-when-cross-origin')
+  c.header('Permissions-Policy', 'accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()')
+  c.header('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload')
+  
+  // Content Security Policy
+  c.header('Content-Security-Policy', 
+    "default-src 'self'; " +
+    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://wa.me; " +
+    "style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://fonts.googleapis.com; " +
+    "font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net; " +
+    "img-src 'self' data: https: blob:; " +
+    "connect-src 'self' https://wa.me https://api.whatsapp.com; " +
+    "frame-src 'self' https://wa.me; " +
+    "object-src 'none'; " +
+    "base-uri 'self'; " +
+    "form-action 'self' https://wa.me; " +
+    "frame-ancestors 'self'; " +
+    "upgrade-insecure-requests;"
+  )
+  
+  // Cache Control based on content type
+  const contentType = c.res.headers.get('content-type') || ''
+  
+  if (contentType.includes('image/')) {
+    c.header('Cache-Control', 'public, max-age=31536000, immutable')
+  } else if (contentType.includes('javascript') || contentType.includes('css')) {
+    c.header('Cache-Control', 'public, max-age=31536000, immutable')
+  } else if (contentType.includes('html')) {
+    c.header('Cache-Control', 'public, max-age=3600, must-revalidate')
+  }
+})
+
 // Enable CORS for API routes
 app.use('/api/*', cors())
 
