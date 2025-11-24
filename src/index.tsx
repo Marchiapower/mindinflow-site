@@ -15,20 +15,16 @@ app.use('*', async (c, next) => {
   c.header('Permissions-Policy', 'accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()')
   c.header('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload')
   
-  // Content Security Policy
+  // Content Security Policy - Relaxed for CDNs and inline scripts
   c.header('Content-Security-Policy', 
-    "default-src 'self'; " +
-    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://wa.me; " +
-    "style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://fonts.googleapis.com; " +
-    "font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net; " +
-    "img-src 'self' data: https: blob:; " +
-    "connect-src 'self' https://wa.me https://api.whatsapp.com; " +
-    "frame-src 'self' https://wa.me; " +
-    "object-src 'none'; " +
-    "base-uri 'self'; " +
-    "form-action 'self' https://wa.me; " +
-    "frame-ancestors 'self'; " +
-    "upgrade-insecure-requests;"
+    "default-src * 'unsafe-inline' 'unsafe-eval' data: blob:; " +
+    "script-src * 'unsafe-inline' 'unsafe-eval'; " +
+    "style-src * 'unsafe-inline'; " +
+    "img-src * data: blob: 'unsafe-inline'; " +
+    "font-src * data:; " +
+    "connect-src *; " +
+    "frame-src *; " +
+    "object-src 'none';"
   )
   
   // Cache Control based on content type
