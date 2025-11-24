@@ -490,31 +490,31 @@ app.get('/', (c) => {
             <!-- Canvas de Partículas Network/Conexões -->
             <canvas id="particlesCanvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;"></canvas>
             
-            <div class="hero-content section-container flex flex-col items-center justify-center text-center py-32 fade-in" style="position: relative; z-index: 3;">
+            <div class="hero-content section-container flex flex-col items-center justify-start text-center pt-20 pb-20 fade-in" style="position: relative; z-index: 3;">
                 <!-- Conteúdo Centralizado -->
-                <div class="max-w-5xl space-y-10">
+                <div class="max-w-5xl space-y-8">
                     
-                    <h1 class="text-6xl lg:text-8xl font-black leading-tight">
-                        <!-- Logo integrada ao título - Brilho sutil reduzido - 30% maior -->
+                    <h1 class="text-5xl lg:text-7xl font-black leading-tight">
+                        <!-- Logo integrada ao título - Reduzida para caber above the fold -->
                         <img src="https://raw.githubusercontent.com/Marchiapower/mindinflow-site/main/public/favicon.png" 
                              alt="Mind In Flow" 
-                             class="mx-auto mb-8 w-auto"
-                             style="height: 416px; max-height: 666px; filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));"
+                             class="mx-auto mb-6 w-auto"
+                             style="height: 320px; max-height: 380px; filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));"
                              onload="this.style.display='block'">
                         <span class="text-white">A Inteligência Humana Conectando Possibilidades</span><br>
                         <span class="text-white">por Trás da Sua</span><br>
                         <span class="gradient-text">Máquina de Conversão Digital</span>
                     </h1>
                     
-                    <p class="text-2xl lg:text-3xl text-gray-300 leading-relaxed font-medium max-w-4xl mx-auto">
+                    <p class="text-xl lg:text-2xl text-gray-300 leading-relaxed font-medium max-w-4xl mx-auto">
                         Entregamos <strong class="text-white">visibilidade orgânica</strong>, 
                         <strong class="text-white">conversão</strong> e o 
                         <strong class="text-white">agente de vendas</strong> que o seu negócio precisa.
                     </p>
                     
-                    <div class="flex flex-col sm:flex-row gap-4 pt-8 justify-center">
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                         <a href="https://wa.me/5511918534654?text=Olá! Quero falar com um Estrategista Mind In Flow sobre meu posicionamento digital" 
-                           class="btn-primary text-center text-xl px-12 py-5"
+                           class="btn-primary text-center text-lg px-10 py-4"
                            target="_blank">
                             <i class="fas fa-rocket mr-3"></i>
                             Quero Minha Consultoria de Posicionamento Digital
