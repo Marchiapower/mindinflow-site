@@ -461,12 +461,6 @@ app.get('/', (c) => {
                     padding: 1rem 2rem;
                     font-size: 0.85rem;
                 }
-                
-                /* 🚫 DISABLE particles canvas on mobile (performance) */
-                #particlesCanvas {
-                    display: none !important;
-                    visibility: hidden !important;
-                }
             }
             
             .whatsapp-float {
@@ -1182,20 +1176,12 @@ app.get('/', (c) => {
             
             // Garantir que DOM está pronto antes de inicializar
             function initParticles() {
-                // 🚫 CRITICAL: DISABLE PARTICLES ON MOBILE (Performance Optimization)
-                const isMobile = window.innerWidth < 768;
-                
-                if (isMobile) {
-                    console.log('🚫 Particles DISABLED on mobile for performance');
-                    return; // Exit early - no particles on mobile
-                }
-                
                 const canvas = document.getElementById('particlesCanvas');
                 console.log('Particles init attempt:', {
                     canvasFound: !!canvas,
                     windowWidth: window.innerWidth,
                     windowHeight: window.innerHeight,
-                    isMobile: false // Always false when we reach here
+                    isMobile: window.innerWidth < 768
                 });
                 
                 if (!canvas) {
@@ -1210,20 +1196,24 @@ app.get('/', (c) => {
                 let particles = [];
                 let animationId;
 
-                // Configurações (tudo no máximo para DESKTOP APENAS)
+                // Configurações (tudo no máximo como solicitado)
                 const config = {
                     count: 150,              // Quantidade máxima
                     speed: 3,                // Velocidade máxima
                     opacity: 1,              // Opacidade máxima
                     maxDistance: 150,        // Distância para conectar
                     particleSize: 4,         // Tamanho das partículas AUMENTADO (2.5 → 4)
-                    lineWidth: 2.5          // Espessura das linhas AUMENTADA (1.5 → 2.5)
+                    lineWidth: 2.5,          // Espessura das linhas AUMENTADA (1.5 → 2.5)
+                    // Mobile configs (agora igual ao PC)
+                    mobileOpacity: 1,        // Opacidade igual ao PC
+                    mobileParticleSize: 4    // Tamanho igual ao PC
                 };
 
                 // Detectar preferência de movimento reduzido (acessibilidade)
                 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
                 console.log('Prefers reduced motion:', prefersReducedMotion);
                 
+                // REMOVIDO O BLOQUEIO - sempre mostrar partículas
                 // Reduzir velocidade se usuário preferir menos movimento
                 if (prefersReducedMotion) {
                     config.speed = 1; // Velocidade reduzida
@@ -1256,19 +1246,27 @@ app.get('/', (c) => {
                         }
 
                         draw() {
-                            // Desktop only - no mobile check needed
+                            const isMobile = window.innerWidth < 768;
+                            const baseOpacity = isMobile ? config.mobileOpacity : config.opacity;
+                            const particleSize = isMobile ? config.mobileParticleSize : this.size;
+                            
+                            // Resetar globalAlpha antes de definir (fix)
                             ctx.globalAlpha = 1;
                             ctx.fillStyle = '#FF7A3D';
-                            ctx.globalAlpha = this.opacity * config.opacity;
+                            ctx.globalAlpha = this.opacity * baseOpacity;
                             ctx.beginPath();
-                            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                            ctx.arc(this.x, this.y, particleSize, 0, Math.PI * 2);
                             ctx.fill();
                             ctx.closePath();
                         }
                     }
 
-                    // Conectar partículas próximas (Desktop only)
+                    // Conectar partículas próximas
                     function connectParticles() {
+                        const isMobile = window.innerWidth < 768;
+                        const baseOpacity = isMobile ? config.mobileOpacity : config.opacity;
+                        const lineWidth = config.lineWidth; // Mesmo lineWidth para mobile e PC
+                        
                         for (let i = 0; i < particles.length; i++) {
                             for (let j = i + 1; j < particles.length; j++) {
                                 const dx = particles[i].x - particles[j].x;
@@ -1276,11 +1274,12 @@ app.get('/', (c) => {
                                 const distance = Math.sqrt(dx * dx + dy * dy);
 
                                 if (distance < config.maxDistance) {
+                                    // Mesma opacidade das linhas para mobile e PC (AUMENTADA 0.5 → 0.8)
                                     const lineOpacity = 0.8;
                                     const opacity = (1 - distance / config.maxDistance) * lineOpacity;
                                     ctx.strokeStyle = '#FF7A3D';
-                                    ctx.globalAlpha = opacity * config.opacity;
-                                    ctx.lineWidth = config.lineWidth;
+                                    ctx.globalAlpha = opacity * baseOpacity;
+                                    ctx.lineWidth = lineWidth;
                                     ctx.beginPath();
                                     ctx.moveTo(particles[i].x, particles[i].y);
                                     ctx.lineTo(particles[j].x, particles[j].y);
@@ -1313,9 +1312,14 @@ app.get('/', (c) => {
                             console.warn('Hero section not found, using window dimensions');
                         }
                         
-                        // Desktop only - use full count
+                        // Ajustar quantidade de partículas baseado em tamanho da tela
+                        const isMobile = window.innerWidth < 768;
+                        // Mobile usa 70% das partículas ao invés de 50%
+                        const particleCount = isMobile ? Math.floor(config.count * 0.7) : config.count;
+                        
+                        // Reinicializar partículas com novo tamanho
                         particles = [];
-                        for (let i = 0; i < config.count; i++) {
+                        for (let i = 0; i < particleCount; i++) {
                             particles.push(new Particle());
                         }
                     }
