@@ -35,7 +35,8 @@ app.use('*', async (c, next) => {
   } else if (contentType.includes('javascript') || contentType.includes('css')) {
     c.header('Cache-Control', 'public, max-age=31536000, immutable')
   } else if (contentType.includes('html')) {
-    c.header('Cache-Control', 'public, max-age=3600, must-revalidate')
+    c.header('Cache-Control', 'public, max-age=86400, must-revalidate')
+    c.header('Expires', new Date(Date.now() + 86400000).toUTCString())
   }
 })
 
@@ -106,13 +107,14 @@ app.get('/', (c) => {
         <link rel="dns-prefetch" href="https://fonts.googleapis.com">
         <link rel="dns-prefetch" href="https://fonts.gstatic.com">
         
-        <!-- Tailwind CSS -->
-        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Tailwind CSS - MOBILE: defer | DESKTOP: sync -->
+        <script src="https://cdn.tailwindcss.com" defer></script>
         
-        <!-- FontAwesome Icons -->
-        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <!-- FontAwesome Icons - MOBILE: async | DESKTOP: sync -->
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
+        <noscript><link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"></noscript>
         
-        <!-- Google Fonts -->
+        <!-- Google Fonts - MOBILE: swap | DESKTOP: auto -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -587,42 +589,48 @@ app.get('/', (c) => {
                         <div class="flex items-center justify-center p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
                             <img src="/logo-alma-viva.png" 
                                  alt="Alma Viva - Consultório de Psicologia" 
-                                 class="max-h-32 w-auto opacity-80 hover:opacity-100 transition-opacity">
+                                 class="max-h-32 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                                 loading="lazy">
                         </div>
                         
                         <!-- Contex -->
                         <div class="flex items-center justify-center p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
                             <img src="/logo-contex.png" 
                                  alt="Contex Assessoria Contábil" 
-                                 class="max-h-32 w-auto opacity-80 hover:opacity-100 transition-opacity">
+                                 class="max-h-32 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                                 loading="lazy">
                         </div>
                         
                         <!-- Insight Builders -->
                         <div class="flex items-center justify-center p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
                             <img src="/logo-insight-builders.png" 
                                  alt="Insight Builders" 
-                                 class="max-h-32 w-auto opacity-80 hover:opacity-100 transition-opacity">
+                                 class="max-h-32 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                                 loading="lazy">
                         </div>
                         
                         <!-- Tina Óticas -->
                         <div class="flex items-center justify-center p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
                             <img src="/logo-tina-oticas.png" 
                                  alt="Tina Óticas" 
-                                 class="max-h-32 w-auto opacity-80 hover:opacity-100 transition-opacity">
+                                 class="max-h-32 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                                 loading="lazy">
                         </div>
                         
                         <!-- Marlise Meneghe -->
                         <div class="flex items-center justify-center p-6 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
                             <img src="/logo-marlise-meneghe.png" 
                                  alt="Marlise Meneghe Mentora" 
-                                 class="max-h-16 w-auto opacity-80 hover:opacity-100 transition-opacity">
+                                 class="max-h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                                 loading="lazy">
                         </div>
                         
                         <!-- Cellavi -->
                         <div class="flex items-center justify-center p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105">
                             <img src="/logo-cellavi.png" 
                                  alt="Cellavi" 
-                                 class="max-h-32 w-auto opacity-80 hover:opacity-100 transition-opacity">
+                                 class="max-h-32 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                                 loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -911,7 +919,7 @@ app.get('/', (c) => {
                 <!-- Pillar 1: Tecnologia de Captação -->
                 <div class="card-pillar">
                     <div class="icon-circle">
-                        <img src="/icon-captacao.png" alt="Tecnologia de Captação" class="icon-img">
+                        <img src="/icon-captacao.png" alt="Tecnologia de Captação" class="icon-img" width="128" height="128" loading="lazy">
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4 gradient-text">
                         Tecnologia de Captação
@@ -925,7 +933,7 @@ app.get('/', (c) => {
                 <!-- Pillar 2: Performance SEO Max -->
                 <div class="card-pillar">
                     <div class="icon-circle">
-                        <img src="/icon-seo.png" alt="Performance SEO Max" class="icon-img">
+                        <img src="/icon-seo.png" alt="Performance SEO Max" class="icon-img" width="128" height="128" loading="lazy">
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4 gradient-text">
                         Performance SEO Max
@@ -939,7 +947,7 @@ app.get('/', (c) => {
                 <!-- Pillar 3: Design de Elite -->
                 <div class="card-pillar">
                     <div class="icon-circle">
-                        <img src="/icon-design.png" alt="Design de Elite" class="icon-img">
+                        <img src="/icon-design.png" alt="Design de Elite" class="icon-img" width="128" height="128" loading="lazy">
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4 gradient-text">
                         Design de Elite
@@ -953,7 +961,7 @@ app.get('/', (c) => {
                 <!-- Pillar 4: Entrega Turbo -->
                 <div class="card-pillar">
                     <div class="icon-circle">
-                        <img src="/icon-entrega.png" alt="Entrega Turbo" class="icon-img">
+                        <img src="/icon-entrega.png" alt="Entrega Turbo" class="icon-img" width="128" height="128" loading="lazy">
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4 gradient-text">
                         Entrega Turbo & Suporte Premium
@@ -981,7 +989,8 @@ app.get('/', (c) => {
                     <div class="lg:w-1/3">
                         <img src="/mentor-photo.png" 
                              alt="Marcelo Chiappetta - Fundador Mind In Flow" 
-                             class="rounded-xl shadow-xl border-2 border-orange-500/30 w-full">
+                             class="rounded-xl shadow-xl border-2 border-orange-500/30 w-full"
+                             loading="lazy">
                         <div class="text-center mt-4">
                             <h3 class="text-2xl font-black text-white mb-1">Marcelo Chiappetta</h3>
                             <p class="text-orange-400 font-semibold text-lg">Fundador & Estrategista Comercial</p>
@@ -1011,7 +1020,7 @@ app.get('/', (c) => {
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="testimonial-card">
                     <div class="flex items-center mb-4">
-                        <img src="/andrea-cotrim.jpg" alt="Andrea Cotrim" class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-orange-500/30">
+                        <img src="/andrea-cotrim.jpg" alt="Andrea Cotrim" class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-orange-500/30" loading="lazy">
                         <div>
                             <p class="font-bold text-lg">Andrea Cotrim</p>
                             <p class="text-sm text-gray-400">Psicóloga Clínica</p>
@@ -1033,7 +1042,7 @@ app.get('/', (c) => {
                 
                 <div class="testimonial-card">
                     <div class="flex items-center mb-4">
-                        <img src="/bruno-prieto.jpg" alt="Bruno Prieto" class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-orange-500/30">
+                        <img src="/bruno-prieto.jpg" alt="Bruno Prieto" class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-orange-500/30" loading="lazy">
                         <div>
                             <p class="font-bold text-lg">Bruno Prieto</p>
                             <p class="text-sm text-gray-400">Nutricionista Esportivo</p>
@@ -1055,7 +1064,7 @@ app.get('/', (c) => {
                 
                 <div class="testimonial-card">
                     <div class="flex items-center mb-4">
-                        <img src="/marlise-meneghe.jpg" alt="Marlise Meneghe" class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-orange-500/30">
+                        <img src="/marlise-meneghe.jpg" alt="Marlise Meneghe" class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-orange-500/30" loading="lazy">
                         <div>
                             <p class="font-bold text-lg">Marlise Meneghe</p>
                             <p class="text-sm text-gray-400">Mentora de Negócios</p>
@@ -1111,7 +1120,7 @@ app.get('/', (c) => {
         <!-- Footer -->
         <footer class="bg-black py-12 mt-20 border-t border-orange-500/20">
             <div class="section-container text-center">
-                <img src="/mindinflow-logo.png" alt="Mind In Flow Logo" class="mx-auto mb-6 rounded-full bg-white/10 p-3" style="width: 160px; opacity: 0.8; display: block;" onload="console.log('Footer logo loaded')">
+                <img src="/mindinflow-logo.png" alt="Mind In Flow Logo" class="mx-auto mb-6 rounded-full bg-white/10 p-3" style="width: 160px; opacity: 0.8; display: block;" loading="lazy">
                 <p class="text-gray-400 mb-2 text-lg font-medium">
                     &copy; 2025 Mind In Flow - Inteligência Comercial
                 </p>
