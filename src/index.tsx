@@ -175,7 +175,7 @@ app.get('/', (c) => {
                 "ratingValue": "5",
                 "bestRating": "5"
               },
-              "reviewBody": "Meu site de psicologia online agora atrai os pacientes certos. A Mind In Flow entendeu minha abordagem terapêutica e traduziu isso em um posicionamento digital que triplicou meu agendamento de consultas em 2 meses."
+              "reviewBody": "A Mind In Flow entendeu minha abordagem terapêutica e traduziu isso em um posicionamento digital estratégico que atrai os pacientes certos de forma consistente."
             },
             {
               "@type": "Review",
@@ -188,7 +188,7 @@ app.get('/', (c) => {
                 "ratingValue": "5",
                 "bestRating": "5"
               },
-              "reviewBody": "Como nutricionista, eu precisava de uma presença digital forte. A Mind In Flow criou um site que me posicionou como referência em nutrição esportiva. Minha lista de espera cresceu 400% e dobrei meu ticket médio."
+              "reviewBody": "A Mind In Flow criou uma presença digital estratégica que me posicionou como referência em nutrição esportiva, com resultados mensuráveis em captação de leads qualificados."
             },
             {
               "@type": "Review",
@@ -642,8 +642,8 @@ app.get('/', (c) => {
                         <p class="text-gray-400 text-lg font-medium mt-2">Projetos Entregues</p>
                     </div>
                     <div>
-                        <div class="stats-number">98%</div>
-                        <p class="text-gray-400 text-lg font-medium mt-2">Taxa de Conversão Aumentada</p>
+                        <div class="stats-number">5 Anos</div>
+                        <p class="text-gray-400 text-lg font-medium mt-2">Experiência em Estratégia Digital</p>
                     </div>
                     <div>
                         <div class="stats-number">7 dias</div>
@@ -1027,8 +1027,8 @@ app.get('/', (c) => {
                         Como Escapar do Oceano Vermelho da Psicologia em SP
                     </h3>
                     <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                        A história de como uma psicóloga recém-formada <strong class="text-white">triplicou sua agenda</strong> 
-                        em 2 meses, mesmo em São Paulo — onde <strong class="text-orange-400">22,4% dos psicólogos não têm renda</strong> na área.
+                        Como construímos uma <strong class="text-white">estratégia digital completa e personalizada</strong> que transforma profissionais 
+                        em <strong class="text-orange-400">autoridade digital posicionada</strong>, com sistema de automação sob medida e foco estratégico no cliente final.
                     </p>
                 </div>
                 
@@ -1087,7 +1087,7 @@ app.get('/', (c) => {
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check-circle text-orange-400 mt-1 mr-3"></i>
-                                <span><strong class="text-white">Agenda cheia</strong> em 60 dias com pacientes ideais</span>
+                                <span>Estratégia de <strong class="text-white">crescimento sustentável</strong> com foco em pacientes ideais</span>
                             </li>
                         </ul>
                     </div>
@@ -1125,8 +1125,8 @@ app.get('/', (c) => {
                             <div class="w-16 h-16 bg-orange-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-orange-500">
                                 <span class="text-2xl font-black text-orange-400">4</span>
                             </div>
-                            <h5 class="font-bold text-white mb-2">Lançamento Digital</h5>
-                            <p class="text-sm text-gray-400">Plataforma de autoridade que converte visitantes em pacientes</p>
+                            <h5 class="font-bold text-white mb-2">Lançamento Estratégico</h5>
+                            <p class="text-sm text-gray-400">Plataforma de autoridade + SEO + automação inteligente com IA personalizada</p>
                         </div>
                     </div>
                 </div>
@@ -1172,9 +1172,10 @@ app.get('/', (c) => {
                             A Solução: Atendente Virtual Inteligente 24/7
                         </h5>
                         <p class="text-gray-300 mb-6 leading-relaxed">
-                            Desenvolvemos para a Andrea uma <strong class="text-white">atendente virtual com IA</strong> que resolve 
-                            esse paradoxo de forma elegante. A automação trabalha <strong class="text-orange-400">24 horas por dia, 7 dias por semana</strong>, 
-                            mas a Andrea <strong class="text-white">mantém a percepção de autoridade e ocupação</strong>.
+                            Desenvolvemos uma <strong class="text-white">atendente virtual inteligente</strong> que resolve esse paradoxo de forma elegante. 
+                            A automação incorpora <strong class="text-orange-400">máscaras de crenças do público-alvo</strong> e 
+                            <strong class="text-white">conhecimentos estratégicos específicos do profissional</strong>, criando um sistema sob medida 
+                            que reflete a <strong class="text-orange-400">visão do contratante</strong> enquanto atrai o cliente final 24/7.
                         </p>
                         
                         <div class="grid md:grid-cols-2 gap-6 mb-6">
@@ -1190,7 +1191,7 @@ app.get('/', (c) => {
                                     </li>
                                     <li class="flex items-start">
                                         <i class="fas fa-check text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
-                                        <span><strong class="text-white">Triagem inteligente:</strong> Qualifica o lead com perguntas estratégicas</span>
+                                        <span><strong class="text-white">Triagem estratégica:</strong> IA com máscaras de crenças personalizadas e objeções mapeadas</span>
                                     </li>
                                     <li class="flex items-start">
                                         <i class="fas fa-check text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
@@ -1259,17 +1260,17 @@ app.get('/', (c) => {
                     <!-- The Impact -->
                     <div class="mt-6 bg-black/40 rounded-lg p-6 border border-orange-500/30">
                         <h5 class="text-lg font-bold text-center text-white mb-4">
-                            <i class="fas fa-rocket text-orange-400 mr-2"></i>
-                            Impacto Direto nos Resultados da Andrea:
+                            <i class="fas fa-robot text-orange-400 mr-2"></i>
+                            Ferramentas Estratégicas Implementadas:
                         </h5>
                         <div class="grid md:grid-cols-3 gap-4 text-center">
                             <div>
-                                <div class="text-3xl font-black gradient-text mb-1">78%</div>
-                                <p class="text-sm text-gray-300">Taxa de conversão<br>visitante → agendado</p>
+                                <div class="text-3xl font-black gradient-text mb-1">24/7</div>
+                                <p class="text-sm text-gray-300">Atendente Virtual<br>com IA personalizada</p>
                             </div>
                             <div>
-                                <div class="text-3xl font-black gradient-text mb-1">24/7</div>
-                                <p class="text-sm text-gray-300">Captação de leads<br>sem interrupção</p>
+                                <div class="text-3xl font-black gradient-text mb-1">Auto</div>
+                                <p class="text-sm text-gray-300">Agendamento<br>Google Calendar</p>
                             </div>
                             <div>
                                 <div class="text-3xl font-black gradient-text mb-1">0h</div>
@@ -1279,24 +1280,172 @@ app.get('/', (c) => {
                     </div>
                 </div>
                 
-                <!-- The Results -->
-                <div class="bg-black/40 border border-orange-500/30 rounded-xl p-8">
-                    <h4 class="text-2xl font-black text-center mb-8">
+                <!-- The Results: SEO & Traffic Projections -->
+                <div class="bg-black/40 border border-orange-500/30 rounded-xl p-8 mb-8">
+                    <h4 class="text-2xl font-black text-center mb-4">
                         <i class="fas fa-chart-line text-orange-400 mr-2"></i>
-                        <span class="gradient-text">Resultados em 60 Dias</span>
+                        <span class="gradient-text">Projeções de Tráfego Orgânico (SEO)</span>
                     </h4>
-                    <div class="grid md:grid-cols-3 gap-6 text-center">
-                        <div>
-                            <div class="text-5xl font-black gradient-text mb-2">3x</div>
-                            <p class="text-gray-300 font-semibold">Agendamentos<br>Triplicados</p>
+                    <p class="text-center text-sm text-gray-400 mb-6">
+                        *Cenários medianos baseados em palavras-chave de baixa concorrência (volume 100-1000/mês)
+                    </p>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-black/60 rounded-lg p-6 border border-orange-500/20">
+                            <div class="text-center mb-4">
+                                <div class="text-3xl font-black gradient-text mb-2">3 Meses</div>
+                                <p class="text-xs text-gray-500">Indexação e primeiras posições</p>
+                            </div>
+                            <ul class="space-y-2 text-sm text-gray-300">
+                                <li class="flex items-center">
+                                    <i class="fas fa-arrow-right text-orange-400 mr-2 text-xs"></i>
+                                    <span><strong class="text-white">50-100</strong> visitas/mês</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-arrow-right text-orange-400 mr-2 text-xs"></i>
+                                    <span><strong class="text-white">5-10</strong> palavras-chave ranqueadas</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-arrow-right text-orange-400 mr-2 text-xs"></i>
+                                    <span>Início de <strong class="text-white">autoridade</strong></span>
+                                </li>
+                            </ul>
                         </div>
-                        <div>
-                            <div class="text-5xl font-black gradient-text mb-2">100%</div>
-                            <p class="text-gray-300 font-semibold">Pacientes<br>Qualificados</p>
+                        
+                        <div class="bg-black/60 rounded-lg p-6 border border-orange-500/30">
+                            <div class="text-center mb-4">
+                                <div class="text-3xl font-black gradient-text mb-2">6 Meses</div>
+                                <p class="text-xs text-gray-500">Consolidação e crescimento</p>
+                            </div>
+                            <ul class="space-y-2 text-sm text-gray-300">
+                                <li class="flex items-center">
+                                    <i class="fas fa-arrow-right text-orange-400 mr-2 text-xs"></i>
+                                    <span><strong class="text-white">200-400</strong> visitas/mês</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-arrow-right text-orange-400 mr-2 text-xs"></i>
+                                    <span><strong class="text-white">15-25</strong> palavras-chave Top 10</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-arrow-right text-orange-400 mr-2 text-xs"></i>
+                                    <span><strong class="text-white">Autoridade</strong> estabelecida</span>
+                                </li>
+                            </ul>
                         </div>
+                        
+                        <div class="bg-black/60 rounded-lg p-6 border border-orange-500/50">
+                            <div class="text-center mb-4">
+                                <div class="text-3xl font-black gradient-text mb-2">12 Meses</div>
+                                <p class="text-xs text-gray-500">Maturidade e escala</p>
+                            </div>
+                            <ul class="space-y-2 text-sm text-gray-300">
+                                <li class="flex items-center">
+                                    <i class="fas fa-arrow-right text-orange-400 mr-2 text-xs"></i>
+                                    <span><strong class="text-white">500-1.000</strong> visitas/mês</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-arrow-right text-orange-400 mr-2 text-xs"></i>
+                                    <span><strong class="text-white">30-50+</strong> palavras-chave ranqueadas</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-arrow-right text-orange-400 mr-2 text-xs"></i>
+                                    <span><strong class="text-white">Referência</strong> no nicho</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 bg-orange-500/10 rounded-lg p-6 border border-orange-500/30">
+                        <h5 class="text-lg font-bold text-center text-white mb-3">
+                            <i class="fas fa-bullseye text-orange-400 mr-2"></i>
+                            Estratégia Multi-Canal: Orgânico + Pago
+                        </h5>
+                        <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-300">
+                            <div class="flex items-start">
+                                <i class="fas fa-google text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-white">Google Ads:</strong> Anúncios estratégicos para palavras-chave de alta intenção de compra e testes de conversão
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-chart-bar text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-white">Meta Ads (Facebook/Instagram):</strong> Segmentação demográfica precisa e campanhas de awareness estratégico
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-center text-xs text-gray-400 mt-4">
+                            <i class="fas fa-info-circle text-orange-400 mr-1"></i>
+                            Participamos ativamente da estratégia e otimização contínua, ajustando campanhas para maximizar ROI
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Our Commitment (Instead of Promises) -->
+                <div class="bg-black/60 border border-orange-500/20 rounded-xl p-8 mb-8">
+                    <h4 class="text-2xl font-black text-center mb-6">
+                        <i class="fas fa-handshake text-orange-400 mr-2"></i>
+                        <span class="gradient-text">Nossa Abordagem Estratégica</span>
+                    </h4>
+                    <div class="grid md:grid-cols-2 gap-6">
                         <div>
-                            <div class="text-5xl font-black gradient-text mb-2">0</div>
-                            <p class="text-gray-300 font-semibold">Investimento em<br>Estrutura Física</p>
+                            <h5 class="font-bold text-white mb-3 flex items-center">
+                                <i class="fas fa-brain text-orange-400 mr-2"></i>
+                                Personalização Total (Não é Template):
+                            </h5>
+                            <ul class="space-y-2 text-sm text-gray-300">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span><strong class="text-white">Máscaras de crenças:</strong> Adaptamos comunicação às objeções do seu público</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span><strong class="text-white">Conhecimentos estratégicos:</strong> Insights do seu mercado específico</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span><strong class="text-white">Visão do contratante:</strong> O sistema reflete VOCÊ, não um modelo genérico</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h5 class="font-bold text-white mb-3 flex items-center">
+                                <i class="fas fa-users text-orange-400 mr-2"></i>
+                                Foco no Cliente Final:
+                            </h5>
+                            <ul class="space-y-2 text-sm text-gray-300">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span><strong class="text-white">Jornada otimizada:</strong> Cliente final sempre atraído e engajado</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span><strong class="text-white">Mensagens sob medida:</strong> Linguagem que ressoa com DOR específica</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span><strong class="text-white">Conversão natural:</strong> Sem truques, apenas estratégia autêntica</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-6 border-t border-orange-500/20">
+                        <div class="bg-black/40 rounded-lg p-6 border border-orange-500/30">
+                            <h5 class="text-lg font-bold text-center text-white mb-4">
+                                <i class="fas fa-shield-alt text-orange-400 mr-2"></i>
+                                Posicionamento Ético e Responsável
+                            </h5>
+                            <p class="text-center text-gray-300 leading-relaxed mb-4">
+                                <strong class="text-white">Não prometemos números mágicos, resultados instantâneos ou fórmulas milagrosas.</strong>
+                            </p>
+                            <p class="text-center text-sm text-gray-300 leading-relaxed">
+                                Trabalhamos como <strong class="text-orange-400">parceiros estratégicos ativos</strong> no seu crescimento digital, 
+                                participando de cada etapa — desde diagnóstico e implementação até otimização contínua de SEO, anúncios e conversão. 
+                                Nossa meta é construir <strong class="text-white">autoridade digital sustentável</strong> e <strong class="text-orange-400">conversão lucrativa de longo prazo</strong>, 
+                                respeitando o tempo de maturação do mercado e as particularidades do seu negócio.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1307,13 +1456,13 @@ app.get('/', (c) => {
                     <div class="flex-1">
                         <p class="text-lg text-gray-300 italic mb-3">
                             "Eu poderia ter investido em consultório físico, mas a Mind In Flow me mostrou que <strong class="text-white">estrutura digital 
-                            é o único ativo que multiplica autoridade sem multiplicar custos</strong>. A <strong class="text-orange-400">atendente virtual 
-                            trabalha 24/7</strong> enquanto eu durmo, e eu acordo com minha agenda preenchida por <strong class="text-white">pacientes qualificados</strong>. 
-                            Não perco tempo com atendimento comercial e <strong class="text-orange-400">escolho meus pacientes</strong>."
+                            é o ativo mais inteligente</strong> para construir autoridade escalável. A <strong class="text-orange-400">atendente virtual personalizada</strong> 
+                            reflete minha abordagem terapêutica e trabalha 24/7, enquanto eu foco apenas em atender. O sistema foi feito <strong class="text-white">sob medida</strong> 
+                            para o meu público-alvo e me permite <strong class="text-orange-400">escolher pacientes alinhados</strong> com meu trabalho."
                         </p>
                         <div>
                             <p class="font-bold text-white">Andrea Cotrim</p>
-                            <p class="text-sm text-gray-400">Psicóloga Clínica • Agenda completa em 2 meses</p>
+                            <p class="text-sm text-gray-400">Psicóloga Clínica • Cliente Mind In Flow</p>
                         </div>
                     </div>
                 </div>
@@ -1327,8 +1476,8 @@ app.get('/', (c) => {
                         </h5>
                         <p class="text-lg text-gray-300 mb-6 max-w-2xl">
                             Se você está <strong class="text-white">cansado de competir por preço</strong>, não quer perder tempo com atendimento comercial 
-                            e deseja ter uma <strong class="text-orange-400">atendente virtual 24/7</strong> preenchendo sua agenda com 
-                            <strong class="text-orange-400">pacientes qualificados</strong> enquanto você atende...
+                            e deseja construir <strong class="text-orange-400">autoridade digital posicionada</strong> com sistema de automação inteligente 
+                            <strong class="text-white">feito sob medida para o seu público</strong>...
                         </p>
                         <a href="https://wa.me/5511918534654?text=Ol%C3%A1!%20Sou%20psic%C3%B3logo(a)%20e%20quero%20sair%20do%20oceano%20vermelho%20como%20a%20Andrea%20Cotrim" 
                            class="btn-primary inline-flex items-center text-lg px-8 py-4">
@@ -1353,9 +1502,9 @@ app.get('/', (c) => {
                         </div>
                     </div>
                     <p class="text-gray-300 leading-relaxed mb-4">
-                        "Meu site de psicologia online agora <strong class="text-white">atrai os pacientes certos</strong>. 
-                        A Mind In Flow entendeu minha abordagem terapêutica e traduziu isso em um posicionamento 
-                        digital que <strong class="text-white">triplicou meu agendamento</strong> de consultas em 2 meses."
+                        "A Mind In Flow entendeu minha abordagem terapêutica e traduziu isso em um <strong class="text-white">posicionamento digital estratégico</strong>. 
+                        O sistema personalizado que criaram <strong class="text-white">atrai consistentemente pacientes certos</strong> e alinhados com meu trabalho, 
+                        com foco em qualidade e não quantidade."
                     </p>
                     <div class="flex text-orange-400">
                         <i class="fas fa-star"></i>
@@ -1375,9 +1524,9 @@ app.get('/', (c) => {
                         </div>
                     </div>
                     <p class="text-gray-300 leading-relaxed mb-4">
-                        "Como nutricionista, eu precisava de uma presença digital forte. A Mind In Flow criou 
-                        um site que me posicionou como <strong class="text-white">referência em nutrição esportiva</strong>. 
-                        Minha lista de espera cresceu 400% e <strong class="text-white">dobrei meu ticket médio</strong>."
+                        "A Mind In Flow criou uma <strong class="text-white">presença digital estratégica</strong> que me posicionou 
+                        como referência em nutrição esportiva. O resultado foi um <strong class="text-white">aumento mensurável na captação de leads qualificados</strong> 
+                        e fortalecimento da minha autoridade no nicho."
                     </p>
                     <div class="flex text-orange-400">
                         <i class="fas fa-star"></i>
