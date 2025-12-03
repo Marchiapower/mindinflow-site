@@ -1327,7 +1327,7 @@ app.get('/', (c) => {
                         </h5>
                         <p class="text-lg text-gray-300 mb-6 max-w-2xl">
                             Se você está <strong class="text-white">cansado de competir por preço</strong>, não quer perder tempo com atendimento comercial 
-                            e deseja ter uma <strong class="text-purple-400">atendente virtual 24/7</strong> preenchendo sua agenda com 
+                            e deseja ter uma <strong class="text-orange-400">atendente virtual 24/7</strong> preenchendo sua agenda com 
                             <strong class="text-orange-400">pacientes qualificados</strong> enquanto você atende...
                         </p>
                         <a href="https://wa.me/5511918534654?text=Ol%C3%A1!%20Sou%20psic%C3%B3logo(a)%20e%20quero%20sair%20do%20oceano%20vermelho%20como%20a%20Andrea%20Cotrim" 
