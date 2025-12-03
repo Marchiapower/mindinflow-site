@@ -1034,59 +1034,59 @@ app.get('/', (c) => {
                 
                 <!-- The Challenge -->
                 <div class="grid lg:grid-cols-2 gap-8 mb-12">
-                    <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
-                        <h4 class="text-2xl font-black text-red-400 mb-4 flex items-center">
-                            <i class="fas fa-exclamation-triangle mr-3"></i>
+                    <div class="bg-black/40 border border-orange-500/20 rounded-xl p-6">
+                        <h4 class="text-2xl font-black text-gray-300 mb-4 flex items-center">
+                            <i class="fas fa-exclamation-triangle text-orange-400 mr-3"></i>
                             O Oceano Vermelho
                         </h4>
                         <ul class="space-y-3 text-gray-300">
                             <li class="flex items-start">
-                                <i class="fas fa-chevron-right text-red-400 mt-1 mr-3"></i>
+                                <i class="fas fa-chevron-right text-orange-400 mt-1 mr-3"></i>
                                 <span><strong class="text-white">São Paulo:</strong> 5-6x mais psicólogos que a média nacional</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-chevron-right text-red-400 mt-1 mr-3"></i>
+                                <i class="fas fa-chevron-right text-orange-400 mt-1 mr-3"></i>
                                 <span><strong class="text-white">22,4%</strong> dos psicólogos sem rendimentos (SciELO)</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-chevron-right text-red-400 mt-1 mr-3"></i>
+                                <i class="fas fa-chevron-right text-orange-400 mt-1 mr-3"></i>
                                 <span><strong class="text-white">48%</strong> de evasão durante a graduação</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-chevron-right text-red-400 mt-1 mr-3"></i>
+                                <i class="fas fa-chevron-right text-orange-400 mt-1 mr-3"></i>
                                 <span>Concorrência liderada por <strong class="text-white">plataformas que achatam preços</strong></span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-chevron-right text-red-400 mt-1 mr-3"></i>
+                                <i class="fas fa-chevron-right text-orange-400 mt-1 mr-3"></i>
                                 <span>Profissionais posicionados como <strong class="text-white">commodities</strong></span>
                             </li>
                         </ul>
                     </div>
                     
-                    <div class="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6">
-                        <h4 class="text-2xl font-black text-blue-400 mb-4 flex items-center">
+                    <div class="bg-black/40 border border-orange-500/30 rounded-xl p-6">
+                        <h4 class="text-2xl font-black gradient-text mb-4 flex items-center">
                             <i class="fas fa-lightbulb mr-3"></i>
                             O Oceano Azul
                         </h4>
                         <ul class="space-y-3 text-gray-300">
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
+                                <i class="fas fa-check-circle text-orange-400 mt-1 mr-3"></i>
                                 <span><strong class="text-white">Nicho identificado:</strong> Dor emocional específica</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
+                                <i class="fas fa-check-circle text-orange-400 mt-1 mr-3"></i>
                                 <span><strong class="text-white">Comunicação direcionada</strong> para público qualificado</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
+                                <i class="fas fa-check-circle text-orange-400 mt-1 mr-3"></i>
                                 <span><strong class="text-white">Posicionamento de autoridade</strong> vs commodity</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
+                                <i class="fas fa-check-circle text-orange-400 mt-1 mr-3"></i>
                                 <span>Investimento em <strong class="text-white">estrutura digital</strong> ao invés de física</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
+                                <i class="fas fa-check-circle text-orange-400 mt-1 mr-3"></i>
                                 <span><strong class="text-white">Agenda cheia</strong> em 60 dias com pacientes ideais</span>
                             </li>
                         </ul>
@@ -1132,72 +1132,72 @@ app.get('/', (c) => {
                 </div>
                 
                 <!-- The Innovation: Virtual Assistant 24/7 -->
-                <div class="bg-purple-500/10 border border-purple-500/30 rounded-xl p-8 mb-8">
+                <div class="bg-black/40 border border-orange-500/20 rounded-xl p-8 mb-8">
                     <h4 class="text-2xl font-black text-center mb-6">
-                        <i class="fas fa-robot text-purple-400 mr-2"></i>
+                        <i class="fas fa-robot text-orange-400 mr-2"></i>
                         <span class="gradient-text">O Paradoxo do Atendimento em Psicologia</span>
                     </h4>
                     
                     <!-- The Paradox -->
-                    <div class="bg-red-500/10 border border-red-500/20 rounded-lg p-6 mb-6">
-                        <h5 class="text-xl font-bold text-red-400 mb-4 flex items-center">
-                            <i class="fas fa-exclamation-circle mr-2"></i>
+                    <div class="bg-black/60 border border-gray-600 rounded-lg p-6 mb-6">
+                        <h5 class="text-xl font-bold text-gray-300 mb-4 flex items-center">
+                            <i class="fas fa-exclamation-circle text-orange-400 mr-2"></i>
                             O Problema que Todo Psicólogo Enfrenta:
                         </h5>
                         <div class="grid md:grid-cols-2 gap-4 text-gray-300">
                             <div class="flex items-start">
-                                <i class="fas fa-times-circle text-red-400 mt-1 mr-3 flex-shrink-0"></i>
+                                <i class="fas fa-times-circle text-orange-400 mt-1 mr-3 flex-shrink-0"></i>
                                 <div>
                                     <strong class="text-white">Se você está sempre disponível:</strong>
                                     <p class="text-sm mt-1">"Parece que não tem pacientes, logo não é boa profissional"</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
-                                <i class="fas fa-times-circle text-red-400 mt-1 mr-3 flex-shrink-0"></i>
+                                <i class="fas fa-times-circle text-orange-400 mt-1 mr-3 flex-shrink-0"></i>
                                 <div>
                                     <strong class="text-white">Se demora para responder:</strong>
                                     <p class="text-sm mt-1">"O lead digital quer atendimento AGORA. Demora = perde o cliente"</p>
                                 </div>
                             </div>
                         </div>
-                        <p class="text-center text-lg font-bold text-red-300 mt-4 italic">
+                        <p class="text-center text-lg font-bold text-orange-400 mt-4 italic">
                             Como resolver esse paradoxo impossível? 🤔
                         </p>
                     </div>
                     
                     <!-- The Solution -->
-                    <div class="bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-400/30 rounded-lg p-6">
-                        <h5 class="text-xl font-bold text-purple-400 mb-4 flex items-center">
+                    <div class="bg-black/40 border border-orange-500/30 rounded-lg p-6">
+                        <h5 class="text-xl font-bold gradient-text mb-4 flex items-center">
                             <i class="fas fa-lightbulb mr-2"></i>
                             A Solução: Atendente Virtual Inteligente 24/7
                         </h5>
                         <p class="text-gray-300 mb-6 leading-relaxed">
                             Desenvolvemos para a Andrea uma <strong class="text-white">atendente virtual com IA</strong> que resolve 
-                            esse paradoxo de forma elegante. A automação trabalha <strong class="text-purple-400">24 horas por dia, 7 dias por semana</strong>, 
+                            esse paradoxo de forma elegante. A automação trabalha <strong class="text-orange-400">24 horas por dia, 7 dias por semana</strong>, 
                             mas a Andrea <strong class="text-white">mantém a percepção de autoridade e ocupação</strong>.
                         </p>
                         
                         <div class="grid md:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <h6 class="font-bold text-white mb-3 flex items-center">
-                                    <i class="fas fa-cogs text-purple-400 mr-2"></i>
+                                    <i class="fas fa-cogs text-orange-400 mr-2"></i>
                                     Como Funciona:
                                 </h6>
                                 <ul class="space-y-2 text-sm text-gray-300">
                                     <li class="flex items-start">
-                                        <i class="fas fa-check text-green-400 mt-1 mr-2 flex-shrink-0"></i>
+                                        <i class="fas fa-check text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
                                         <span><strong class="text-white">Atendimento instantâneo:</strong> Resposta em segundos, qualquer hora</span>
                                     </li>
                                     <li class="flex items-start">
-                                        <i class="fas fa-check text-green-400 mt-1 mr-2 flex-shrink-0"></i>
+                                        <i class="fas fa-check text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
                                         <span><strong class="text-white">Triagem inteligente:</strong> Qualifica o lead com perguntas estratégicas</span>
                                     </li>
                                     <li class="flex items-start">
-                                        <i class="fas fa-check text-green-400 mt-1 mr-2 flex-shrink-0"></i>
+                                        <i class="fas fa-check text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
                                         <span><strong class="text-white">Agendamento automático:</strong> Integração com Google Calendar em tempo real</span>
                                     </li>
                                     <li class="flex items-start">
-                                        <i class="fas fa-check text-green-400 mt-1 mr-2 flex-shrink-0"></i>
+                                        <i class="fas fa-check text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
                                         <span><strong class="text-white">Consulta inicial gratuita:</strong> Elimina objeções e qualifica interesse real</span>
                                     </li>
                                 </ul>
@@ -1205,24 +1205,24 @@ app.get('/', (c) => {
                             
                             <div>
                                 <h6 class="font-bold text-white mb-3 flex items-center">
-                                    <i class="fas fa-trophy text-purple-400 mr-2"></i>
+                                    <i class="fas fa-trophy text-orange-400 mr-2"></i>
                                     Benefícios para Andrea:
                                 </h6>
                                 <ul class="space-y-2 text-sm text-gray-300">
                                     <li class="flex items-start">
-                                        <i class="fas fa-star text-yellow-400 mt-1 mr-2 flex-shrink-0"></i>
+                                        <i class="fas fa-star text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
                                         <span><strong class="text-white">Agenda sincronizada:</strong> Vê horários e agendamentos em tempo real</span>
                                     </li>
                                     <li class="flex items-start">
-                                        <i class="fas fa-star text-yellow-400 mt-1 mr-2 flex-shrink-0"></i>
+                                        <i class="fas fa-star text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
                                         <span><strong class="text-white">Zero esforço comercial:</strong> Não precisa "vender" ou fazer follow-up</span>
                                     </li>
                                     <li class="flex items-start">
-                                        <i class="fas fa-star text-yellow-400 mt-1 mr-2 flex-shrink-0"></i>
+                                        <i class="fas fa-star text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
                                         <span><strong class="text-white">Mantém autoridade:</strong> Nunca parece "desesperada por clientes"</span>
                                     </li>
                                     <li class="flex items-start">
-                                        <i class="fas fa-star text-yellow-400 mt-1 mr-2 flex-shrink-0"></i>
+                                        <i class="fas fa-star text-orange-400 mt-1 mr-2 flex-shrink-0"></i>
                                         <span><strong class="text-white">Captura leads 24/7:</strong> Mesmo dormindo, a agenda está sendo preenchida</span>
                                     </li>
                                 </ul>
@@ -1230,26 +1230,26 @@ app.get('/', (c) => {
                         </div>
                         
                         <!-- Visual Flow -->
-                        <div class="bg-black/30 rounded-lg p-4 border border-purple-500/20">
+                        <div class="bg-black/60 rounded-lg p-4 border border-orange-500/20">
                             <p class="text-center text-sm text-gray-400 mb-3 font-semibold">Fluxo de Conversão Automatizado:</p>
                             <div class="flex flex-wrap items-center justify-center gap-3 text-sm">
-                                <div class="bg-purple-500/20 px-4 py-2 rounded-lg border border-purple-500/30">
-                                    <i class="fas fa-user mr-2 text-purple-400"></i>
+                                <div class="bg-orange-500/10 px-4 py-2 rounded-lg border border-orange-500/30">
+                                    <i class="fas fa-user mr-2 text-orange-400"></i>
                                     <span class="text-white">Visitante no site</span>
                                 </div>
-                                <i class="fas fa-arrow-right text-purple-400 hidden md:block"></i>
-                                <div class="bg-purple-500/20 px-4 py-2 rounded-lg border border-purple-500/30">
-                                    <i class="fas fa-robot mr-2 text-purple-400"></i>
+                                <i class="fas fa-arrow-right text-orange-400 hidden md:block"></i>
+                                <div class="bg-orange-500/10 px-4 py-2 rounded-lg border border-orange-500/30">
+                                    <i class="fas fa-robot mr-2 text-orange-400"></i>
                                     <span class="text-white">IA atende 24/7</span>
                                 </div>
-                                <i class="fas fa-arrow-right text-purple-400 hidden md:block"></i>
-                                <div class="bg-purple-500/20 px-4 py-2 rounded-lg border border-purple-500/30">
-                                    <i class="fas fa-clipboard-check mr-2 text-purple-400"></i>
+                                <i class="fas fa-arrow-right text-orange-400 hidden md:block"></i>
+                                <div class="bg-orange-500/10 px-4 py-2 rounded-lg border border-orange-500/30">
+                                    <i class="fas fa-clipboard-check mr-2 text-orange-400"></i>
                                     <span class="text-white">Triagem automática</span>
                                 </div>
-                                <i class="fas fa-arrow-right text-purple-400 hidden md:block"></i>
-                                <div class="bg-green-500/20 px-4 py-2 rounded-lg border border-green-500/30">
-                                    <i class="fas fa-calendar-check mr-2 text-green-400"></i>
+                                <i class="fas fa-arrow-right text-orange-400 hidden md:block"></i>
+                                <div class="bg-orange-500/20 px-4 py-2 rounded-lg border border-orange-500/50">
+                                    <i class="fas fa-calendar-check mr-2 text-orange-400"></i>
                                     <span class="text-white">Consulta agendada</span>
                                 </div>
                             </div>
@@ -1257,22 +1257,22 @@ app.get('/', (c) => {
                     </div>
                     
                     <!-- The Impact -->
-                    <div class="mt-6 bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-lg p-6 border border-green-500/20">
+                    <div class="mt-6 bg-black/40 rounded-lg p-6 border border-orange-500/30">
                         <h5 class="text-lg font-bold text-center text-white mb-4">
-                            <i class="fas fa-rocket text-green-400 mr-2"></i>
+                            <i class="fas fa-rocket text-orange-400 mr-2"></i>
                             Impacto Direto nos Resultados da Andrea:
                         </h5>
                         <div class="grid md:grid-cols-3 gap-4 text-center">
                             <div>
-                                <div class="text-3xl font-black text-green-400 mb-1">78%</div>
+                                <div class="text-3xl font-black gradient-text mb-1">78%</div>
                                 <p class="text-sm text-gray-300">Taxa de conversão<br>visitante → agendado</p>
                             </div>
                             <div>
-                                <div class="text-3xl font-black text-green-400 mb-1">24/7</div>
+                                <div class="text-3xl font-black gradient-text mb-1">24/7</div>
                                 <p class="text-sm text-gray-300">Captação de leads<br>sem interrupção</p>
                             </div>
                             <div>
-                                <div class="text-3xl font-black text-green-400 mb-1">0h</div>
+                                <div class="text-3xl font-black gradient-text mb-1">0h</div>
                                 <p class="text-sm text-gray-300">Tempo gasto com<br>atendimento comercial</p>
                             </div>
                         </div>
@@ -1280,34 +1280,34 @@ app.get('/', (c) => {
                 </div>
                 
                 <!-- The Results -->
-                <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-8">
+                <div class="bg-black/40 border border-orange-500/30 rounded-xl p-8">
                     <h4 class="text-2xl font-black text-center mb-8">
-                        <i class="fas fa-chart-line text-green-400 mr-2"></i>
+                        <i class="fas fa-chart-line text-orange-400 mr-2"></i>
                         <span class="gradient-text">Resultados em 60 Dias</span>
                     </h4>
                     <div class="grid md:grid-cols-3 gap-6 text-center">
                         <div>
-                            <div class="text-5xl font-black text-green-400 mb-2">3x</div>
+                            <div class="text-5xl font-black gradient-text mb-2">3x</div>
                             <p class="text-gray-300 font-semibold">Agendamentos<br>Triplicados</p>
                         </div>
                         <div>
-                            <div class="text-5xl font-black text-green-400 mb-2">100%</div>
+                            <div class="text-5xl font-black gradient-text mb-2">100%</div>
                             <p class="text-gray-300 font-semibold">Pacientes<br>Qualificados</p>
                         </div>
                         <div>
-                            <div class="text-5xl font-black text-green-400 mb-2">0</div>
+                            <div class="text-5xl font-black gradient-text mb-2">0</div>
                             <p class="text-gray-300 font-semibold">Investimento em<br>Estrutura Física</p>
                         </div>
                     </div>
                 </div>
                 
                 <!-- The Quote -->
-                <div class="mt-8 flex flex-col md:flex-row items-center gap-6 bg-black/40 rounded-xl p-6">
+                <div class="mt-8 flex flex-col md:flex-row items-center gap-6 bg-black/40 rounded-xl p-6 border border-orange-500/20">
                     <img src="/andrea-cotrim.jpg" alt="Andrea Cotrim" class="w-24 h-24 rounded-full border-4 border-orange-500/50" loading="lazy">
                     <div class="flex-1">
                         <p class="text-lg text-gray-300 italic mb-3">
                             "Eu poderia ter investido em consultório físico, mas a Mind In Flow me mostrou que <strong class="text-white">estrutura digital 
-                            é o único ativo que multiplica autoridade sem multiplicar custos</strong>. A <strong class="text-purple-400">atendente virtual 
+                            é o único ativo que multiplica autoridade sem multiplicar custos</strong>. A <strong class="text-orange-400">atendente virtual 
                             trabalha 24/7</strong> enquanto eu durmo, e eu acordo com minha agenda preenchida por <strong class="text-white">pacientes qualificados</strong>. 
                             Não perco tempo com atendimento comercial e <strong class="text-orange-400">escolho meus pacientes</strong>."
                         </p>
