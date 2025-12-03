@@ -1027,7 +1027,7 @@ app.get('/', (c) => {
                         Como Escapar do Oceano Vermelho da Psicologia em SP
                     </h3>
                     <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                        A história de como uma psicóloga <strong class="text-white">triplicou sua agenda</strong> 
+                        A história de como uma psicóloga recém-formada <strong class="text-white">triplicou sua agenda</strong> 
                         em 2 meses, mesmo em São Paulo — onde <strong class="text-orange-400">22,4% dos psicólogos não têm renda</strong> na área.
                     </p>
                 </div>
@@ -1323,7 +1323,7 @@ app.get('/', (c) => {
                     <div class="inline-block bg-orange-500/10 border border-orange-500/30 rounded-xl p-8">
                         <h5 class="text-2xl font-black mb-4 text-white">
                             <i class="fas fa-brain text-orange-400 mr-2"></i>
-                            Você é Psicólogo(a)?
+                            Você é Psicólogo(a) Recém-Formado(a)?
                         </h5>
                         <p class="text-lg text-gray-300 mb-6 max-w-2xl">
                             Se você está <strong class="text-white">cansado de competir por preço</strong>, não quer perder tempo com atendimento comercial 
