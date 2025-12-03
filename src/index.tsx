@@ -1016,6 +1016,182 @@ app.get('/', (c) => {
                 </div>
             </div>
             
+            <!-- CASE STUDY: Andrea Cotrim - Do Oceano Vermelho ao Oceano Azul -->
+            <div class="max-w-6xl mx-auto mb-20 bg-gradient-to-br from-orange-500/10 to-orange-600/5 rounded-2xl p-8 lg:p-12 border border-orange-500/20">
+                <div class="text-center mb-12">
+                    <span class="inline-block px-4 py-2 bg-orange-500/20 rounded-full text-orange-400 font-bold text-sm mb-4">
+                        📊 CASE DE SUCESSO
+                    </span>
+                    <h3 class="text-3xl lg:text-4xl font-black mb-4">
+                        <span class="gradient-text">Andrea Cotrim:</span><br>
+                        Como Escapar do Oceano Vermelho da Psicologia em SP
+                    </h3>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                        A história de como uma psicóloga recém-formada <strong class="text-white">triplicou sua agenda</strong> 
+                        em 2 meses, mesmo em São Paulo — onde <strong class="text-orange-400">22,4% dos psicólogos não têm renda</strong> na área.
+                    </p>
+                </div>
+                
+                <!-- The Challenge -->
+                <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h4 class="text-2xl font-black text-red-400 mb-4 flex items-center">
+                            <i class="fas fa-exclamation-triangle mr-3"></i>
+                            O Oceano Vermelho
+                        </h4>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-red-400 mt-1 mr-3"></i>
+                                <span><strong class="text-white">São Paulo:</strong> 5-6x mais psicólogos que a média nacional</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-red-400 mt-1 mr-3"></i>
+                                <span><strong class="text-white">22,4%</strong> dos psicólogos sem rendimentos (SciELO)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-red-400 mt-1 mr-3"></i>
+                                <span><strong class="text-white">48%</strong> de evasão durante a graduação</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-red-400 mt-1 mr-3"></i>
+                                <span>Concorrência liderada por <strong class="text-white">plataformas que achatam preços</strong></span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-red-400 mt-1 mr-3"></i>
+                                <span>Profissionais posicionados como <strong class="text-white">commodities</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6">
+                        <h4 class="text-2xl font-black text-blue-400 mb-4 flex items-center">
+                            <i class="fas fa-lightbulb mr-3"></i>
+                            O Oceano Azul
+                        </h4>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
+                                <span><strong class="text-white">Nicho identificado:</strong> Dor emocional específica</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
+                                <span><strong class="text-white">Comunicação direcionada</strong> para público qualificado</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
+                                <span><strong class="text-white">Posicionamento de autoridade</strong> vs commodity</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
+                                <span>Investimento em <strong class="text-white">estrutura digital</strong> ao invés de física</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
+                                <span><strong class="text-white">Agenda cheia</strong> em 60 dias com pacientes ideais</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- The Process -->
+                <div class="bg-black/40 rounded-xl p-8 mb-8">
+                    <h4 class="text-2xl font-black text-center mb-8 gradient-text">
+                        <i class="fas fa-route mr-2"></i>
+                        O Processo de Transformação
+                    </h4>
+                    <div class="grid md:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-orange-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-orange-500">
+                                <span class="text-2xl font-black text-orange-400">1</span>
+                            </div>
+                            <h5 class="font-bold text-white mb-2">Diagnóstico Profundo</h5>
+                            <p class="text-sm text-gray-400">Mapeamento de inclinações terapêuticas e público-alvo ideal</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-orange-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-orange-500">
+                                <span class="text-2xl font-black text-orange-400">2</span>
+                            </div>
+                            <h5 class="font-bold text-white mb-2">Análise de Mercado</h5>
+                            <p class="text-sm text-gray-400">Identificação de dor específica e oportunidades não saturadas</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-orange-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-orange-500">
+                                <span class="text-2xl font-black text-orange-400">3</span>
+                            </div>
+                            <h5 class="font-bold text-white mb-2">Posicionamento Estratégico</h5>
+                            <p class="text-sm text-gray-400">Comunicação diferenciada para atrair pacientes certos</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-orange-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-orange-500">
+                                <span class="text-2xl font-black text-orange-400">4</span>
+                            </div>
+                            <h5 class="font-bold text-white mb-2">Lançamento Digital</h5>
+                            <p class="text-sm text-gray-400">Plataforma de autoridade que converte visitantes em pacientes</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- The Results -->
+                <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-8">
+                    <h4 class="text-2xl font-black text-center mb-8">
+                        <i class="fas fa-chart-line text-green-400 mr-2"></i>
+                        <span class="gradient-text">Resultados em 60 Dias</span>
+                    </h4>
+                    <div class="grid md:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <div class="text-5xl font-black text-green-400 mb-2">3x</div>
+                            <p class="text-gray-300 font-semibold">Agendamentos<br>Triplicados</p>
+                        </div>
+                        <div>
+                            <div class="text-5xl font-black text-green-400 mb-2">100%</div>
+                            <p class="text-gray-300 font-semibold">Pacientes<br>Qualificados</p>
+                        </div>
+                        <div>
+                            <div class="text-5xl font-black text-green-400 mb-2">0</div>
+                            <p class="text-gray-300 font-semibold">Investimento em<br>Estrutura Física</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- The Quote -->
+                <div class="mt-8 flex flex-col md:flex-row items-center gap-6 bg-black/40 rounded-xl p-6">
+                    <img src="/andrea-cotrim.jpg" alt="Andrea Cotrim" class="w-24 h-24 rounded-full border-4 border-orange-500/50" loading="lazy">
+                    <div class="flex-1">
+                        <p class="text-lg text-gray-300 italic mb-3">
+                            "Eu poderia ter investido em consultório físico, mas a Mind In Flow me mostrou que <strong class="text-white">estrutura digital 
+                            é o único ativo que multiplica autoridade sem multiplicar custos</strong>. Agora atendo online, cobro acima da média 
+                            do mercado e <strong class="text-orange-400">escolho meus pacientes</strong>."
+                        </p>
+                        <div>
+                            <p class="font-bold text-white">Andrea Cotrim</p>
+                            <p class="text-sm text-gray-400">Psicóloga Clínica • Agenda completa em 2 meses</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CTA for Psychologists -->
+                <div class="mt-10 text-center">
+                    <div class="inline-block bg-orange-500/10 border border-orange-500/30 rounded-xl p-8">
+                        <h5 class="text-2xl font-black mb-4 text-white">
+                            <i class="fas fa-brain text-orange-400 mr-2"></i>
+                            Você é Psicólogo(a) Recém-Formado(a)?
+                        </h5>
+                        <p class="text-lg text-gray-300 mb-6 max-w-2xl">
+                            Se você está <strong class="text-white">cansado de competir por preço</strong>, quer sair do oceano vermelho 
+                            e <strong class="text-orange-400">construir autoridade digital</strong> sem investir em estrutura física...
+                        </p>
+                        <a href="https://wa.me/5511918534654?text=Ol%C3%A1!%20Sou%20psic%C3%B3logo(a)%20e%20quero%20sair%20do%20oceano%20vermelho%20como%20a%20Andrea%20Cotrim" 
+                           class="btn-primary inline-flex items-center text-lg px-8 py-4">
+                            <i class="fab fa-whatsapp text-2xl mr-3"></i>
+                            Quero uma Consultoria como a da Andrea
+                        </a>
+                        <p class="text-sm text-gray-400 mt-4">
+                            ⚡ Resposta em até 2 horas • 🔒 Sem compromisso
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
             <!-- Testimonials -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="testimonial-card">
