@@ -1,8 +1,8 @@
-# Mind In Flow - Website de Inteligência Comercial
+# Power Brand - Website de Inteligência Comercial
 
 ## 🚀 Visão Geral do Projeto
 
-**Mind In Flow** é um website de alta conversão especializado em **Inteligência Comercial**, combinando Sensibilidade Humana com Tecnologia Construtiva. O site foi desenvolvido para posicionar a marca como autoridade em consultoria de posicionamento digital, SEO e conversão de leads.
+**Power Brand** é um website de alta conversão especializado em **Inteligência Comercial**, combinando Sensibilidade Humana com Tecnologia Construtiva. O site foi desenvolvido para posicionar a marca como autoridade em consultoria de posicionamento digital, SEO e conversão de leads.
 
 ### Objetivos Principais
 - Demonstrar autoridade e credibilidade através de design profissional dark mode
@@ -15,9 +15,9 @@
 #### Estrutura Completa de 7 Seções Estratégicas
 
 1. **Hero Section - Conversão Máxima** 🔥 OTIMIZADO
-   - **Logo Mind In Flow integrada ao título** (416px height - 30% maior)
+   - **Logo Power Brand integrada ao título** (416px height - 30% maior)
    - **Logo atualizado**:
-     * "Mind In Flow": Texto preto com brilho branco FORTE interno (radius 6px, opacity 0.9)
+     * "Power Brand": Texto preto com brilho branco FORTE interno (radius 6px, opacity 0.9)
      * "INTELIGÊNCIA COMERCIAL": Texto laranja (#FF7A3D) com letter-spacing para mesma largura
      * Sem contorno branco artificial - brilho CSS reduzido para 5px/0.3
      * Ambas as linhas com mesma largura (775px) perfeitamente alinhadas
@@ -66,12 +66,12 @@
    - **Conexão perfeita** com seções anteriores e posteriores
    - **Posicionamento estratégico**: Entre "Visão" e "Processo" para quebrar objeções
 
-4. **Processo Mind In Flow - Matar Objeção de Tempo**
+4. **Processo Power Brand - Matar Objeção de Tempo**
    - Timeline visual com 4 etapas numeradas
    - Método de 7 dias explicado em detalhes
    - Cards com hover effect e bordas laranjas
 
-5. **Pilares Mind In Flow - O Que Entregamos** 🎯
+5. **Pilares Power Brand - O Que Entregamos** 🎯
    - 4 cards com efeito glow ao hover
    - Ícones PNG circulares com fundo transparente
    - Descrição clara de cada benefício
@@ -105,7 +105,7 @@
 ### URLs de Produção ✅
 - **Produção Principal**: https://powerbrand-site.pages.dev
 - **Última Preview**: https://02e2dacd.powerbrand-site.pages.dev (nova seção estratégica)
-- **GitHub Repo (Mind In Flow)**: https://github.com/Marchiapower/mindinflow-site
+- **GitHub Repo (Power Brand)**: https://github.com/Marchiapower/mindinflow-site
 - **GitHub Repo (PowerBrand - Deploy)**: https://github.com/Marchiapower/powerbrand-site
 
 ### URLs de Desenvolvimento
@@ -138,8 +138,9 @@
 - **CDN Global**: Assets distribuídos via edge network
 
 ### Assets do Projeto
-- `favicon.png` - Logo transparente com fundo removido (145KB) - **HERO LOGO**
-- `mindinflow-logo.png` - Logo com efeito glow (115KB) - **FOOTER LOGO**
+- `favicon.png` - Logo Power Brand (30KB) - **HERO LOGO e FAVICON**
+- `power-brand-logo.png` - Logo com efeito (30KB) - **FOOTER LOGO**
+- `mindinflow-logo.png` - Logo antiga (preservada como backup)
 - `hero-background.jpg` - Background futurista para Hero Section
 - `vision-connection.jpg` - Imagem representando conexão (não usada atualmente)
 - `icon-captacao.png` - Ícone Captação de Leads
@@ -159,7 +160,7 @@
 
 ## 🎨 Identidade Visual
 
-### Paleta de Cores Mind In Flow
+### Paleta de Cores Power Brand
 - **Primary Orange**: `#FF7A3D` - Cor principal aceita pelo cliente
 - **Primary Gold**: `#FFB347` - Gradientes e elementos secundários
 - **Dark Background**: `#0a0a0a` - Background principal
@@ -175,7 +176,7 @@
 ### Para Visitantes
 
 1. **Primeira Impressão**: 
-   - Logo Mind In Flow com efeito glow branco centralizada
+   - Logo Power Brand com efeito glow branco centralizada
    - Proposta de valor clara e direta
 
 2. **Entendendo os Serviços**:
@@ -300,8 +301,8 @@ curl -X POST "https://api.cloudflare.com/client/v4/accounts/{account}/pages/proj
 
 ---
 
-**Última Atualização**: 2025-11-22  
-**Versão**: 1.0.0 (Mind In Flow)  
-**Projeto Base**: Adaptado de PowerBrand  
+**Última Atualização**: 2026-02-21  
+**Versão**: 2.0.0 (Power Brand - Rebranding)  
+**Projeto**: Power Brand Inteligência Comercial  
 **Tecnologia**: Hono + Cloudflare Pages + TypeScript + Tailwind CSS  
 **Deploy**: Cloudflare Pages via API + GitHub CDN
