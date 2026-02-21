@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "mindinflow-site",
+  "name": "powerbrand-site",
   "compatibility_date": "2024-01-01",
   "pages_build_output_dir": "./dist",
   
@@ -62,7 +62,7 @@
   // Variáveis de ambiente (não colocar senhas aqui!)
   "vars": {
     "ENVIRONMENT": "production",
-    "SITE_NAME": "Mind In Flow",
+    "SITE_NAME": "Power Brand",
     "WHATSAPP_NUMBER": "5511918534654"
   }
 }
