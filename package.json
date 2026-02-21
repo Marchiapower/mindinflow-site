@@ -1,7 +1,7 @@
 {
-  "name": "mindinflow-site",
+  "name": "powerbrand-site",
   "version": "1.0.0",
-  "description": "Mind In Flow - Inteligência Comercial com Hono e Cloudflare Pages",
+  "description": "Power Brand - Inteligência Comercial com Hono e Cloudflare Pages",
   "type": "module",
   "scripts": {
     "dev": "vite",

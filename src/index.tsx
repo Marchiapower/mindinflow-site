@@ -55,11 +55,11 @@ app.get('/', (c) => {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
         <!-- Primary Meta Tags -->
-        <title>Mind In Flow - Consultoria de Posicionamento Digital e Conversão | Método 7 Dias</title>
-        <meta name="title" content="Mind In Flow - Consultoria de Posicionamento Digital e Conversão | Método 7 Dias">
-        <meta name="description" content="Transformamos sua presença digital em máquina de conversão. Consultoria especializada em SEO, design e captação de leads. Método Mind In Flow: 7 dias para autoridade digital. WhatsApp: (11) 91853-4654">
-        <meta name="keywords" content="consultoria digital, posicionamento digital, SEO, conversão de leads, marketing digital, autoridade digital, consultoria SEO, design web, captação de leads, agência digital, Mind In Flow">
-        <meta name="author" content="Mind In Flow">
+        <title>Power Brand - Consultoria de Posicionamento Digital e Conversão | Inteligência Comercial</title>
+        <meta name="title" content="Power Brand - Consultoria de Posicionamento Digital e Conversão | Inteligência Comercial">
+        <meta name="description" content="Transformamos sua presença digital em máquina de conversão. Consultoria especializada em SEO, design e captação de leads. Power Brand Inteligência Comercial: 7 dias para autoridade digital. WhatsApp: (11) 91853-4654">
+        <meta name="keywords" content="consultoria digital, posicionamento digital, SEO, conversão de leads, marketing digital, autoridade digital, consultoria SEO, design web, captação de leads, agência digital, Power Brand">
+        <meta name="author" content="Power Brand">
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
         <meta name="language" content="pt-BR">
         <meta name="geo.region" content="BR-SP">
@@ -71,35 +71,35 @@ app.get('/', (c) => {
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://powerbrand.pages.dev/">
-        <meta property="og:title" content="Mind In Flow - Consultoria de Posicionamento Digital e Conversão">
-        <meta property="og:description" content="Transformamos sua presença digital em máquina de conversão. Método Mind In Flow: 7 dias para autoridade digital. Consultoria especializada em SEO, design e captação de leads.">
+        <meta property="og:title" content="Power Brand - Consultoria de Posicionamento Digital e Conversão">
+        <meta property="og:description" content="Transformamos sua presença digital em máquina de conversão. Power Brand Inteligência Comercial: 7 dias para autoridade digital. Consultoria especializada em SEO, design e captação de leads.">
         <meta property="og:image" content="/hero-background.jpg">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
         <meta property="og:locale" content="pt_BR">
-        <meta property="og:site_name" content="Mind In Flow">
+        <meta property="og:site_name" content="Power Brand">
         
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:url" content="https://powerbrand.pages.dev/">
-        <meta name="twitter:title" content="Mind In Flow - Consultoria de Posicionamento Digital">
-        <meta name="twitter:description" content="Transformamos sua presença digital em máquina de conversão. Método Mind In Flow: 7 dias para autoridade digital.">
+        <meta name="twitter:title" content="Power Brand - Consultoria de Posicionamento Digital">
+        <meta name="twitter:description" content="Transformamos sua presença digital em máquina de conversão. Power Brand Inteligência Comercial: 7 dias para autoridade digital.">
         <meta name="twitter:image" content="/hero-background.jpg">
         
         <!-- Additional SEO -->
         <meta name="theme-color" content="#FF8C42">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="apple-mobile-web-app-title" content="Mind In Flow">
+        <meta name="apple-mobile-web-app-title" content="Power Brand">
         <meta name="format-detection" content="telephone=no">
         
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
-        <link rel="icon" type="image/png" href="/mindinflow-logo.png">
-        <link rel="apple-touch-icon" href="/mindinflow-logo.png">
+        <link rel="icon" type="image/png" href="/power-brand-logo.png">
+        <link rel="apple-touch-icon" href="/power-brand-logo.png">
         
         <!-- Preload Critical Resources -->
-        <link rel="preload" href="/favicon.png" as="image" type="image/png" fetchpriority="high">
+        <link rel="preload" href="/power-brand-logo.png" as="image" type="image/png" fetchpriority="high">
         <link rel="preload" href="/hero-background.jpg" as="image" type="image/jpeg">
         <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
         <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
@@ -124,10 +124,10 @@ app.get('/', (c) => {
         {
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "name": "Mind In Flow",
+          "name": "Power Brand",
           "description": "Consultoria especializada em posicionamento digital, SEO e conversão de leads. Transformamos sua presença digital em máquina de conversão.",
           "url": "https://powerbrand.pages.dev",
-          "logo": "https://powerbrand.pages.dev/mindinflow-logo.png",
+          "logo": "https://powerbrand.pages.dev/power-brand-logo.png",
           "image": "https://powerbrand.pages.dev/hero-background.jpg",
           "telephone": "+55-11-91853-4654",
           "priceRange": "$$",
@@ -175,7 +175,7 @@ app.get('/', (c) => {
                 "ratingValue": "5",
                 "bestRating": "5"
               },
-              "reviewBody": "A Mind In Flow entendeu minha abordagem terapêutica e traduziu isso em um posicionamento digital estratégico que atrai os pacientes certos de forma consistente."
+              "reviewBody": "A Power Brand entendeu minha abordagem terapêutica e traduziu isso em um posicionamento digital estratégico que atrai os pacientes certos de forma consistente."
             },
             {
               "@type": "Review",
@@ -188,7 +188,7 @@ app.get('/', (c) => {
                 "ratingValue": "5",
                 "bestRating": "5"
               },
-              "reviewBody": "A Mind In Flow criou uma presença digital estratégica que me posicionou como referência em nutrição esportiva, com resultados mensuráveis em captação de leads qualificados."
+              "reviewBody": "A Power Brand criou uma presença digital estratégica que me posicionou como referência em nutrição esportiva, com resultados mensuráveis em captação de leads qualificados."
             },
             {
               "@type": "Review",
@@ -521,7 +521,7 @@ app.get('/', (c) => {
     </head>
     <body>
         <!-- WhatsApp Floating Button -->
-        <a href="https://wa.me/5511918534654?text=Olá! Quero falar com um Estrategista Mind In Flow sobre meu posicionamento digital" 
+        <a href="https://wa.me/5511918534654?text=Olá! Quero falar com um Estrategista Power Brand sobre meu posicionamento digital" 
            class="whatsapp-float" 
            target="_blank"
            aria-label="Contato WhatsApp">
@@ -541,8 +541,8 @@ app.get('/', (c) => {
                     
                     <h1 class="text-5xl lg:text-7xl font-black leading-tight">
                         <!-- Logo integrada ao título - Responsiva sem distorção -->
-                        <img src="/favicon.png" 
-                             alt="Mind In Flow - Inteligência Comercial" 
+                        <img src="/power-brand-logo.png" 
+                             alt="Power Brand - Inteligência Comercial" 
                              width="420" 
                              height="280"
                              class="mx-auto mb-6"
@@ -561,7 +561,7 @@ app.get('/', (c) => {
                     </p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                        <a href="https://wa.me/5511918534654?text=Olá! Quero falar com um Estrategista Mind In Flow sobre meu posicionamento digital" 
+                        <a href="https://wa.me/5511918534654?text=Olá! Quero falar com um Estrategista Power Brand sobre meu posicionamento digital" 
                            class="btn-primary text-center text-lg px-10 py-4"
                            target="_blank">
                             <i class="fas fa-rocket mr-3"></i>
@@ -833,7 +833,7 @@ app.get('/', (c) => {
         <section class="section-container py-20 fade-in">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-black mb-4">
-                    O Método <span class="gradient-text">Mind In Flow</span> de 7 Dias<br>
+                    O Método <span class="gradient-text">Power Brand</span> de 7 Dias<br>
                     para a Sua Nova Autoridade Digital
                 </h2>
                 <p class="text-xl text-gray-400 max-w-3xl mx-auto">
@@ -908,7 +908,7 @@ app.get('/', (c) => {
         <section class="section-container py-20 fade-in">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-black mb-4">
-                    Pilares <span class="gradient-text">Mind In Flow</span>
+                    Pilares <span class="gradient-text">Power Brand</span>
                 </h2>
                 <p class="text-xl text-gray-400">
                     Performance, Autoridade e Captação de Leads 24/7
@@ -988,7 +988,7 @@ app.get('/', (c) => {
                 <div class="flex flex-col lg:flex-row gap-8 items-center">
                     <div class="lg:w-1/3">
                         <img src="/mentor-photo.png" 
-                             alt="Marcelo Chiappetta - Fundador Mind In Flow" 
+                             alt="Marcelo Chiappetta - Fundador Power Brand" 
                              class="rounded-xl shadow-xl border-2 border-orange-500/30 w-full"
                              loading="lazy">
                         <div class="text-center mt-4">
@@ -1003,7 +1003,7 @@ app.get('/', (c) => {
                             tecnologia sem humanidade é apenas código.
                         </p>
                         <p class="text-xl text-gray-300 leading-relaxed mb-6">
-                            A Mind In Flow nasceu da fusão entre <strong class="gradient-text">domínio técnico absoluto</strong> 
+                            A Power Brand nasceu da fusão entre <strong class="gradient-text">domínio técnico absoluto</strong> 
                             e a <strong class="gradient-text">sensibilidade necessária</strong> para entender o que realmente 
                             move o seu público a tomar decisões.
                         </p>
@@ -1455,14 +1455,14 @@ app.get('/', (c) => {
                     <img src="/andrea-cotrim.jpg" alt="Andrea Cotrim" class="w-24 h-24 rounded-full border-4 border-orange-500/50" loading="lazy">
                     <div class="flex-1">
                         <p class="text-lg text-gray-300 italic mb-3">
-                            "Eu poderia ter investido em consultório físico, mas a Mind In Flow me mostrou que <strong class="text-white">estrutura digital 
+                            "Eu poderia ter investido em consultório físico, mas a Power Brand me mostrou que <strong class="text-white">estrutura digital 
                             é o ativo mais inteligente</strong> para construir autoridade escalável. A <strong class="text-orange-400">atendente virtual personalizada</strong> 
                             reflete minha abordagem terapêutica e trabalha 24/7, enquanto eu foco apenas em atender. O sistema foi feito <strong class="text-white">sob medida</strong> 
                             para o meu público-alvo e me permite <strong class="text-orange-400">escolher pacientes alinhados</strong> com meu trabalho."
                         </p>
                         <div>
                             <p class="font-bold text-white">Andrea Cotrim</p>
-                            <p class="text-sm text-gray-400">Psicóloga Clínica • Cliente Mind In Flow</p>
+                            <p class="text-sm text-gray-400">Psicóloga Clínica • Cliente Power Brand</p>
                         </div>
                     </div>
                 </div>
@@ -1502,7 +1502,7 @@ app.get('/', (c) => {
                         </div>
                     </div>
                     <p class="text-gray-300 leading-relaxed mb-4">
-                        "A Mind In Flow entendeu minha abordagem terapêutica e traduziu isso em um <strong class="text-white">posicionamento digital estratégico</strong>. 
+                        "A Power Brand entendeu minha abordagem terapêutica e traduziu isso em um <strong class="text-white">posicionamento digital estratégico</strong>. 
                         O sistema personalizado que criaram <strong class="text-white">atrai consistentemente pacientes certos</strong> e alinhados com meu trabalho, 
                         com foco em qualidade e não quantidade."
                     </p>
@@ -1524,7 +1524,7 @@ app.get('/', (c) => {
                         </div>
                     </div>
                     <p class="text-gray-300 leading-relaxed mb-4">
-                        "A Mind In Flow criou uma <strong class="text-white">presença digital estratégica</strong> que me posicionou 
+                        "A Power Brand criou uma <strong class="text-white">presença digital estratégica</strong> que me posicionou 
                         como referência em nutrição esportiva. O resultado foi um <strong class="text-white">aumento mensurável na captação de leads qualificados</strong> 
                         e fortalecimento da minha autoridade no nicho."
                     </p>
@@ -1576,13 +1576,13 @@ app.get('/', (c) => {
                         </h2>
                         <p class="text-xl lg:text-2xl mb-10 max-w-3xl mx-auto text-white font-medium">
                             Agende agora sua consultoria de posicionamento digital e descubra como a 
-                            Mind In Flow pode transformar sua presença digital em uma máquina de conversão.
+                            Power Brand pode transformar sua presença digital em uma máquina de conversão.
                         </p>
-                        <a href="https://wa.me/5511918534654?text=Olá! Quero falar com um Estrategista Mind In Flow sobre como multiplicar minha autoridade digital e conversão" 
+                        <a href="https://wa.me/5511918534654?text=Olá! Quero falar com um Estrategista Power Brand sobre como multiplicar minha autoridade digital e conversão" 
                            class="inline-block bg-black text-white font-bold px-10 py-5 rounded-xl text-xl hover:bg-gray-900 transition-all shadow-2xl border-4 border-white"
                            target="_blank">
                             <i class="fab fa-whatsapp mr-3"></i>
-                            Falar com um Estrategista Mind In Flow Agora
+                            Falar com um Estrategista Power Brand Agora
                         </a>
                         <p class="mt-6 text-white/90 text-sm">
                             ⚡ Resposta em até 2 horas • 🔒 Consulta sem compromisso
@@ -1595,9 +1595,9 @@ app.get('/', (c) => {
         <!-- Footer -->
         <footer class="bg-black py-12 mt-20 border-t border-orange-500/20">
             <div class="section-container text-center">
-                <img src="/mindinflow-logo.png" alt="Mind In Flow Logo" class="mx-auto mb-6 rounded-full bg-white/10 p-3" style="width: 160px; opacity: 0.8; display: block;" loading="lazy">
+                <img src="/power-brand-logo.png" alt="Power Brand Logo" class="mx-auto mb-6 rounded-full bg-white/10 p-3" style="width: 160px; opacity: 0.8; display: block;" loading="lazy">
                 <p class="text-gray-400 mb-2 text-lg font-medium">
-                    &copy; 2025 Mind In Flow - Inteligência Comercial
+                    &copy; 2025 Power Brand - Inteligência Comercial
                 </p>
                 <p class="text-gray-500">
                     Sensibilidade Humana + Tecnologia Construtiva
